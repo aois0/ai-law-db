@@ -1,0 +1,60 @@
+# AI法令データベース
+
+> AI向けに最適化された日本の法令データベース。主要税法を構造化データとして提供。
+
+このサイトはLLM/AIエージェントによる法令情報へのアクセスを最適化しています。
+
+## サイト構造
+
+- /index.html - トップページ（法令一覧）
+- /laws/ - 法令HTMLファイル（人間・AI両方向け）
+- /data/ - 法令XMLファイル（機械処理向け）
+- /llms.txt - このファイル（AI向けサイトマップ）
+
+## 利用可能な法令
+
+### 主要税法
+
+| 法令名 | e-Gov ID | HTML | XML |
+|--------|----------|------|-----|
+| 所得税法 | 340AC0000000033 | /laws/shotokuzei.html | /data/shotokuzei.xml |
+| 法人税法 | 340AC0000000034 | /laws/hojinzei.html | /data/hojinzei.xml |
+| 消費税法 | 363AC0000000108 | /laws/shohizei.html | /data/shohizei.xml |
+| 相続税法 | 325AC0000000073 | /laws/sozokuzei.html | /data/sozokuzei.xml |
+| 国税通則法 | 337AC0000000066 | /laws/kokuzei_tsusoku.html | /data/kokuzei_tsusoku.xml |
+| 租税特別措置法 | 332AC0000000026 | /laws/sozei_tokubetsu.html | /data/sozei_tokubetsu.xml |
+
+## AI向け推奨アクセス方法
+
+1. **条文の検索**: HTMLファイルは`<article data-num="条番号">`で構造化されています
+2. **機械処理**: XMLファイルはe-Gov法令APIと同じフォーマットです
+3. **条文の引用**: `第○条第○項`形式で参照可能
+
+## データ形式
+
+### HTML構造
+```html
+<article data-num="1">
+  <h4 class="article-title">第一条</h4>
+  <p class="paragraph" data-para="1">条文本文...</p>
+</article>
+```
+
+### XML構造（e-Gov形式）
+```xml
+<Article Num="1">
+  <ArticleTitle>第一条</ArticleTitle>
+  <Paragraph Num="1">
+    <ParagraphSentence>条文本文...</ParagraphSentence>
+  </Paragraph>
+</Article>
+```
+
+## データ出典
+
+- e-Gov法令検索 API: https://laws.e-gov.go.jp/
+- 最終更新: 2025-12-27
+
+## お問い合わせ
+
+技術的な質問やデータ追加リクエストについては、GitHubリポジトリのIssueをご利用ください。

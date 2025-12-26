@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI法令データベース - 日本の税法</title>
+  <meta name="description" content="AI向けに最適化された日本の法令データベース。所得税法、法人税法、消費税法などの主要税法を構造化データとして提供。">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Site Map">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AI法令データベース",
+    "description": "AI向けに最適化された日本の法令データベース",
+    "url": "https://ai-law-db.example.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ai-law-db.example.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --primary: #1a365d;
+      --secondary: #2c5282;
+      --accent: #3182ce;
+      --bg: #f7fafc;
+      --text: #2d3748;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    header p { opacity: 0.9; }
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .ai-notice {
+      background: #ebf8ff;
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 0 8px 8px 0;
+    }
+    .ai-notice code {
+      background: white;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .law-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .law-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .law-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .law-card h2 {
+      color: var(--primary);
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .law-card p {
+      color: #718096;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .law-card a {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .law-card a:hover { background: var(--secondary); }
+    .formats {
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+    }
+    .formats a {
+      background: #edf2f7;
+      color: var(--text);
+      padding: 0.25rem 0.5rem;
+      margin-right: 0.5rem;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #718096;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI法令データベース</h1>
+    <p>AI向けに最適化された日本の法令データベース</p>
+  </header>
+
+  <main>
+    <section class="ai-notice">
+      <strong>AI向け情報:</strong>
+      このサイトは <code>llms.txt</code> に対応しています。
+      AI/LLMでこのサイトを利用する場合は <a href="/llms.txt">/llms.txt</a> を参照してください。
+    </section>
+
+    <h2 style="margin-bottom: 1rem; color: var(--primary);">主要税法</h2>
+
+    <div class="law-grid">
+      <article class="law-card" data-law-id="340AC0000000033">
+        <h2>所得税法</h2>
+        <p>昭和40年法律第33号<br>個人の所得に対する課税を規定</p>
+        <a href="laws/shotokuzei.html">閲覧する</a>
+        <div class="formats">
+          <a href="data/shotokuzei.xml">XML</a>
+        </div>
+      </article>
+
+      <article class="law-card" data-law-id="340AC0000000034">
+        <h2>法人税法</h2>
+        <p>昭和40年法律第34号<br>法人の所得に対する課税を規定</p>
+        <a href="laws/hojinzei.html">閲覧する</a>
+        <div class="formats">
+          <a href="data/hojinzei.xml">XML</a>
+        </div>
+      </article>
+
+      <article class="law-card" data-law-id="363AC0000000108">
+        <h2>消費税法</h2>
+        <p>昭和63年法律第108号<br>消費に対する課税を規定</p>
+        <a href="laws/shohizei.html">閲覧する</a>
+        <div class="formats">
+          <a href="data/shohizei.xml">XML</a>
+        </div>
+      </article>
+
+      <article class="law-card" data-law-id="325AC0000000073">
+        <h2>相続税法</h2>
+        <p>昭和25年法律第73号<br>相続・贈与に対する課税を規定</p>
+        <a href="laws/sozokuzei.html">閲覧する</a>
+        <div class="formats">
+          <a href="data/sozokuzei.xml">XML</a>
+        </div>
+      </article>
+
+      <article class="law-card" data-law-id="337AC0000000066">
+        <h2>国税通則法</h2>
+        <p>昭和37年法律第66号<br>国税に共通する手続を規定</p>
+        <a href="laws/kokuzei_tsusoku.html">閲覧する</a>
+        <div class="formats">
+          <a href="data/kokuzei_tsusoku.xml">XML</a>
+        </div>
+      </article>
+
+      <article class="law-card" data-law-id="332AC0000000026">
+        <h2>租税特別措置法</h2>
+        <p>昭和32年法律第26号<br>各種租税優遇措置を規定</p>
+        <a href="laws/sozei_tokubetsu.html">閲覧する</a>
+        <div class="formats">
+          <a href="data/sozei_tokubetsu.xml">XML</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>データ出典: <a href="https://laws.e-gov.go.jp/">e-Gov法令検索</a></p>
+    <p>このサイトはAI向けに最適化されています</p>
+  </footer>
+</body>
+</html>
