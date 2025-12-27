@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aois0.github.io/ai-law-db/sitemap.xml
