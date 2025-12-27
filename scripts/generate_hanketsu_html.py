@@ -4,6 +4,7 @@
 """
 
 import pdfplumber
+from pypdf import PdfReader
 import os
 import re
 import json
@@ -46,28 +47,70 @@ SECTIONS = [
 ]
 
 
-def extract_text_from_pdf(pdf_path: str) -> str:
-    """PDFから全テキストを抽出"""
+def extract_text_from_pdf(pdf_path: str) -> tuple:
+    """PDFから全テキストを抽出
+
+    Returns:
+        tuple: (text, is_garbled) - テキストと文字化けフラグ
+    """
     text_parts = []
 
+    # まずpdfplumberで試す
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
             text = page.extract_text()
             if text:
                 text_parts.append(text)
 
-    return '\n\n'.join(text_parts)
+    full_text = '\n\n'.join(text_parts)
+
+    # CIDコードが含まれている場合はpypdfで再抽出
+    if '(cid:' in full_text:
+        text_parts = []
+        reader = PdfReader(pdf_path)
+        for page in reader.pages:
+            text = page.extract_text()
+            if text:
+                text_parts.append(text)
+        full_text = '\n\n'.join(text_parts)
+
+    # 文字化けチェック（特殊文字が多い場合）
+    # 正常な日本語PDF: ひらがな・カタカナ・漢字が多い
+    # 文字化け: 特殊Unicode文字が多い
+    sample = full_text[:500]
+
+    # 正常な日本語文字数
+    normal_jp = len(re.findall(r'[ぁ-んァ-ン一-龯々〆〇]', sample))
+    # 異常な文字（ミャンマー文字、シンハラ文字など）
+    garbled = len(re.findall(r'[ँ-ॿༀ-࿿Ⴀ-ჿ㈀-㏿]', sample))
+
+    is_garbled = garbled > 10 and garbled > normal_jp
+
+    return full_text, is_garbled
 
 
 def clean_text(text: str) -> str:
     """テキストを整形"""
+    # CIDコードを削除（残っている場合）
+    text = re.sub(r'\(cid:\d+\)', '', text)
+
+    # pypdfの出力で見られる不要な改行を修正
+    # 文の途中での改行を削除（句読点の後以外）
+    text = re.sub(r'([^。、）」\n])\n([ぁ-んァ-ン一-龯])', r'\1\2', text)
+
     # ページ番号（行末の単独数字）を削除
     text = re.sub(r'\n\d+\n', '\n', text)
     text = re.sub(r'\n\d+$', '', text)
+
+    # テーブルの崩れた出力を修正（連続した空白や記号）
+    text = re.sub(r'[o O n N \.]{5,}', ' ', text)
+
     # 複数の空白を1つに
     text = re.sub(r'[ \t]+', ' ', text)
+
     # 複数の改行を2つに
     text = re.sub(r'\n{3,}', '\n\n', text)
+
     return text.strip()
 
 
@@ -333,11 +376,16 @@ def main():
 
         try:
             # テキスト抽出
-            text = extract_text_from_pdf(pdf_path)
+            text, is_garbled = extract_text_from_pdf(pdf_path)
 
             if len(text) < 100:
                 print(f"  警告: テキストが短すぎます ({len(text)}文字)")
                 errors.append((case_number, "テキスト抽出失敗"))
+                continue
+
+            if is_garbled:
+                print(f"  警告: 文字化けを検出（特殊フォントPDF）")
+                errors.append((case_number, "文字化け（特殊フォント）"))
                 continue
 
             # 解析
