@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>AI向け強化版法令データベース - 使い方</title>
+<style>
+body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.7; }
+h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
+h2 { color: #0066cc; margin-top: 2em; }
+h3 { color: #333; }
+code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 0.95em; }
+pre { background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto; }
+.law-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0; }
+.law-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; }
+.law-card h4 { margin: 0 0 10px 0; }
+.law-card ul { margin: 5px 0; padding-left: 20px; }
+.law-card a { color: #0066cc; }
+.example { background: #e8f4e8; padding: 15px; border-radius: 5px; margin: 10px 0; }
+.note { background: #fff3cd; padding: 10px; border-radius: 5px; margin: 10px 0; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background: #f5f5f5; }
+</style>
+</head>
+<body>
+
+<h1>AI向け強化版法令データベース</h1>
+
+<p>このデータベースは、LLM/AIエージェントが日本の税法を効率的に検索・参照できるよう最適化されたHTMLファイル群です。</p>
+
+<h2>収録法令</h2>
+
+<div class="law-list">
+  <div class="law-card">
+    <h4>法人税法</h4>
+    <ul>
+      <li><a href="hojinzei/index.html">法人税法（本則）</a></li>
+      <li><a href="hojinzei_seirei/index.html">法人税法施行令</a></li>
+      <li><a href="hojinzei_kisoku/index.html">法人税法施行規則</a></li>
+    </ul>
+  </div>
+  <div class="law-card">
+    <h4>租税特別措置法</h4>
+    <ul>
+      <li><a href="sozei_tokubetsu/index.html">租税特別措置法（本則）</a></li>
+      <li><a href="sozei_tokubetsu_seirei/index.html">租税特別措置法施行令</a></li>
+      <li><a href="sozei_tokubetsu_kisoku/index.html">租税特別措置法施行規則</a></li>
+    </ul>
+  </div>
+</div>
+
+<h2>データ構造</h2>
+
+<h3>ファイル命名規則</h3>
+
+<table>
+<tr><th>パターン</th><th>例</th><th>説明</th></tr>
+<tr><td><code>{条番号}.html</code></td><td><code>22.html</code></td><td>第22条</td></tr>
+<tr><td><code>{条番号}-{枝番}.html</code></td><td><code>22-2.html</code></td><td>第22条の2</td></tr>
+<tr><td><code>index.html</code></td><td>-</td><td>目次（全条文一覧）</td></tr>
+</table>
+
+<h3>HTML属性（data attributes）</h3>
+
+<p>各条文には機械可読なdata属性が付与されています：</p>
+
+<pre><code>&lt;article data-law="法人税法" data-article="22"&gt;
+  &lt;div data-paragraph="1"&gt;
+    &lt;p&gt;1 内国法人の各事業年度の所得の金額は...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div data-paragraph="3"&gt;
+    &lt;p&gt;3 ...次に掲げる額とする。&lt;/p&gt;
+    &lt;p class="item" data-item="一"&gt;一 当該事業年度の収益に係る...&lt;/p&gt;
+    &lt;p class="item" data-item="二"&gt;二 前号に掲げるもののほか...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+
+<table>
+<tr><th>属性</th><th>付与要素</th><th>値の例</th><th>用途</th></tr>
+<tr><td><code>data-law</code></td><td>article</td><td>"法人税法"</td><td>法令名の識別</td></tr>
+<tr><td><code>data-article</code></td><td>article</td><td>"22", "22-2"</td><td>条番号の識別</td></tr>
+<tr><td><code>data-paragraph</code></td><td>div</td><td>"1", "2", "3"</td><td>項番号の識別</td></tr>
+<tr><td><code>data-item</code></td><td>p.item</td><td>"一", "二", "イ"</td><td>号・イロハの識別</td></tr>
+</table>
+
+<h3>関連条文リンク</h3>
+
+<p>条文中に「政令で定める」「令第○条」などの参照がある場合、関連条文へのリンクが自動生成されます：</p>
+
+<pre><code>&lt;div class="refs"&gt;
+  &lt;h3&gt;関連条文&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="../hojinzei_seirei/19.html"&gt;令第十九条&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="../hojinzei_kisoku/index.html"&gt;施行規則（省令/規則で定める）&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+<h2>AIエージェントでの使用例</h2>
+
+<h3>1. 特定条文の取得</h3>
+
+<div class="example">
+<p><strong>質問:</strong> 法人税法第22条を教えて</p>
+<p><strong>URL:</strong> <code>https://aois0.github.io/ai-law-db/enhanced/hojinzei/22.html</code></p>
+</div>
+
+<h3>2. 条文構造の解析</h3>
+
+<div class="example">
+<p><strong>質問:</strong> 法人税法第23条第1項第2号の内容は？</p>
+<p><strong>手順:</strong></p>
+<ol>
+<li><code>hojinzei/23.html</code> を取得</li>
+<li><code>data-paragraph="1"</code> の div を特定</li>
+<li><code>data-item="二"</code> の p 要素を抽出</li>
+</ol>
+</div>
+
+<h3>3. 委任関係の追跡</h3>
+
+<div class="example">
+<p><strong>質問:</strong> 法人税法第23条で「政令で定める」と書かれている部分の詳細は？</p>
+<p><strong>手順:</strong></p>
+<ol>
+<li><code>hojinzei/23.html</code> の「関連条文」セクションを確認</li>
+<li>リンク先 <code>hojinzei_seirei/</code> の該当条文を参照</li>
+</ol>
+</div>
+
+<h3>4. CSSセレクタでの条文抽出</h3>
+
+<pre><code>// 第22条第3項のすべての号を取得
+document.querySelectorAll('[data-article="22"] [data-paragraph="3"] [data-item]')
+
+// 法人税法のすべての条文を取得
+document.querySelectorAll('[data-law="法人税法"]')</code></pre>
+
+<h2>ディレクトリ構造</h2>
+
+<pre><code>enhanced/
+├── index.html              # このページ（使い方）
+├── hojinzei/               # 法人税法（本則）
+│   ├── index.html          # 目次
+│   ├── 1.html              # 第1条
+│   ├── 22.html             # 第22条
+│   └── ...
+├── hojinzei_seirei/        # 法人税法施行令
+├── hojinzei_kisoku/        # 法人税法施行規則
+├── sozei_tokubetsu/        # 租税特別措置法
+├── sozei_tokubetsu_seirei/ # 租税特別措置法施行令
+└── sozei_tokubetsu_kisoku/ # 租税特別措置法施行規則</code></pre>
+
+<h2>注意事項</h2>
+
+<div class="note">
+<ul>
+<li>本データは e-Gov法令検索 のXMLデータを加工したものです</li>
+<li>附則は現在含まれていません（本則のみ）</li>
+<li>法令改正により内容が変わる場合があります</li>
+<li>正確な法令解釈には、必ず公式の法令を確認してください</li>
+</ul>
+</div>
+
+<h2>シンプル版</h2>
+
+<p>data属性なしのシンプルなHTML版もあります：<a href="../simple/">シンプル版</a></p>
+
+<hr>
+<p style="color: #666; font-size: 0.9em;">最終更新: 2024年12月</p>
+
+</body>
+</html>
