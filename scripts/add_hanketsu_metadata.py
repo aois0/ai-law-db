@@ -95,8 +95,14 @@ ISSUE_KEYWORDS = [
 
 
 def extract_text_from_html(html_content: str) -> str:
-    """HTMLからテキストを抽出"""
+    """HTMLからテキストを抽出（既存のメタデータを除外）"""
     soup = BeautifulSoup(html_content, 'html.parser')
+
+    # 既存のメタデータdivを削除してから抽出（循環検出を防ぐ）
+    meta_div = soup.find('div', class_='meta')
+    if meta_div:
+        meta_div.decompose()
+
     # body内のテキストを取得
     body = soup.find('body')
     if body:
@@ -104,9 +110,32 @@ def extract_text_from_html(html_content: str) -> str:
     return soup.get_text(separator=' ')
 
 
+def extract_main_text(text: str) -> str:
+    """関係法令の別紙部分を除外したメインテキストを抽出"""
+    # 「関係法令」「別紙」以降を除外
+    cutoff_patterns = [
+        r'（別紙）\s*関係法令',
+        r'別紙\s*関係法令',
+        r'関係法令の定め',
+        r'【所得税法】',
+        r'【法人税法】',
+        r'【租税特別措置法】',
+    ]
+
+    for pattern in cutoff_patterns:
+        match = re.search(pattern, text)
+        if match:
+            return text[:match.start()]
+
+    return text
+
+
 def detect_tax_types(text: str, title: str) -> list:
     """税目を検出"""
     found = set()
+
+    # 関係法令の別紙を除外
+    main_text = extract_main_text(text)
 
     # タイトルから優先的に検出
     for tax_name, keywords in TAX_TYPES.items():
@@ -115,11 +144,12 @@ def detect_tax_types(text: str, title: str) -> list:
                 found.add(tax_name)
                 break
 
-    # 本文からも検出（タイトルで見つからない場合）
+    # 本文からも検出（タイトルで見つからない場合、冒頭3000文字から）
     if not found:
+        sample = main_text[:3000]
         for tax_name, keywords in TAX_TYPES.items():
             for kw in keywords:
-                if kw in text:
+                if kw in sample:
                     found.add(tax_name)
                     break
 
@@ -130,8 +160,11 @@ def extract_legal_provisions(text: str) -> list:
     """条文を抽出"""
     provisions = set()
 
+    # 関係法令の別紙を除外
+    main_text = extract_main_text(text)
+
     for pattern, law_name in LAW_PATTERNS:
-        matches = re.findall(pattern, text)
+        matches = re.findall(pattern, main_text)
         for match in matches[:5]:  # 各法律から最大5条まで
             if isinstance(match, tuple):
                 match = match[0]
@@ -143,7 +176,10 @@ def extract_legal_provisions(text: str) -> list:
 def detect_issues(text: str, title: str) -> list:
     """争点を検出"""
     found = []
-    combined = title + ' ' + text[:5000]  # 冒頭5000文字で判定
+
+    # 関係法令の別紙を除外
+    main_text = extract_main_text(text)
+    combined = title + ' ' + main_text[:5000]  # 冒頭5000文字で判定
 
     for keyword, issue_name in ISSUE_KEYWORDS:
         if re.search(keyword, combined):
