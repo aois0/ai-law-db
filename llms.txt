@@ -7,22 +7,33 @@
 ## サイト構造
 
 - /index.html - トップページ（法令一覧）
-- /laws/ - 法令HTMLファイル（人間・AI両方向け）
+- /laws/{law_code}/ - 法令別ディレクトリ（1条=1HTMLファイル）
+- /laws/{law_code}/index.html - 法令目次（階層ナビゲーション）
+- /laws/{law_code}/{num}.html - 個別条文（例: 1.html, 6-2.html）
 - /data/ - 法令XMLファイル（機械処理向け）
+- /css/law.css - 共通スタイルシート
+- /js/law.js - 条文検索JavaScript
 - /llms.txt - このファイル（AI向けサイトマップ）
 
 ## 利用可能な法令
 
 ### 主要税法
 
-| 法令名 | e-Gov ID | HTML | XML |
-|--------|----------|------|-----|
-| 所得税法 | 340AC0000000033 | /laws/shotokuzei.html | /data/shotokuzei.xml |
-| 法人税法 | 340AC0000000034 | /laws/hojinzei.html | /data/hojinzei.xml |
-| 消費税法 | 363AC0000000108 | /laws/shohizei.html | /data/shohizei.xml |
-| 相続税法 | 325AC0000000073 | /laws/sozokuzei.html | /data/sozokuzei.xml |
-| 国税通則法 | 337AC0000000066 | /laws/kokuzei_tsusoku.html | /data/kokuzei_tsusoku.xml |
-| 租税特別措置法 | 332AC0000000026 | /laws/sozei_tokubetsu.html | /data/sozei_tokubetsu.xml |
+| 法令名 | e-Gov ID | 条文数 | 目次 | XML |
+|--------|----------|--------|------|-----|
+| 所得税法 | 340AC0000000033 | 285条 | /laws/shotokuzei/index.html | /data/shotokuzei.xml |
+| 法人税法 | 340AC0000000034 | 166条 | /laws/hojinzei/index.html | /data/hojinzei.xml |
+| 消費税法 | 363AC0000000108 | 85条 | /laws/shohizei/index.html | /data/shohizei.xml |
+| 相続税法 | 325AC0000000073 | 110条 | /laws/sozokuzei/index.html | /data/sozokuzei.xml |
+| 国税通則法 | 337AC0000000066 | 194条 | /laws/kokuzei_tsusoku/index.html | /data/kokuzei_tsusoku.xml |
+| 租税特別措置法 | 332AC0000000026 | 496条 | /laws/sozei_tokubetsu/index.html | /data/sozei_tokubetsu.xml |
+
+## 個別条文へのアクセス
+
+各条文は `/laws/{law_code}/{条番号}.html` でアクセス可能:
+- 所得税法第1条: `/laws/shotokuzei/1.html`
+- 所得税法第6条の2: `/laws/shotokuzei/6-2.html`
+- 法人税法第22条: `/laws/hojinzei/22.html`
 
 ## AI向け推奨アクセス方法
 
