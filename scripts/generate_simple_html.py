@@ -131,11 +131,15 @@ def generate_simple_html(law_data: dict, article_num: str) -> str:
         para_num = para.get('num', '')
         para_text = para.get('text', '')
 
-        # 各行を<p>で囲む
-        for line in para_text.split('\n'):
+        # 各行を<p>で囲む（最初の行に項番号を付ける）
+        text_lines = para_text.split('\n')
+        for i, line in enumerate(text_lines):
             line = line.strip()
             if line:
-                lines.append(f'<p>{h(line)}</p>')
+                if i == 0 and para_num:
+                    lines.append(f'<p>{para_num} {h(line)}</p>')
+                else:
+                    lines.append(f'<p>{h(line)}</p>')
 
     lines.append('</body>')
     lines.append('</html>')
