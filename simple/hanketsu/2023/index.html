@@ -6,859 +6,1031 @@
 <title>国税庁判決事例集 2023 - 目次</title>
 <style>
 body {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   font-family: "Hiragino Kaku Gothic Pro", "Yu Gothic", sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 1.6;
   color: #333;
   background: #fafafa;
 }
 h1 { font-size: 1.4em; border-bottom: 2px solid #2563eb; padding-bottom: 8px; }
-h2 { font-size: 1.2em; color: #1e40af; margin-top: 1.5em; }
-h3 { font-size: 1.1em; color: #1e3a8a; margin-top: 1.2em; border-left: 4px solid #3b82f6; padding-left: 10px; }
-.meta { background: #e0f2fe; padding: 12px; border-radius: 6px; margin: 16px 0; }
-.meta p { margin: 4px 0; }
-section { margin: 24px 0; }
-p { margin: 12px 0; text-align: justify; }
-a { color: #2563eb; }
-nav { margin: 20px 0; padding: 10px; background: #f1f5f9; border-radius: 6px; }
-nav a { margin-right: 16px; }
-
 table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e2e8f0; }
-th { background: #f1f5f9; font-weight: bold; }
-tr:hover { background: #f8fafc; }
+th, td { padding: 8px 6px; text-align: left; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+th { background: #1e40af; color: white; font-weight: bold; position: sticky; top: 0; }
+tr:hover { background: #f0f9ff; }
 .result-棄却 { color: #dc2626; }
 .result-認容 { color: #16a34a; }
 .result-一部認容 { color: #ca8a04; }
+.result-取消 { color: #2563eb; }
+.result-却下 { color: #6b7280; }
+.tax-tag { display: inline-block; padding: 2px 6px; margin: 1px; border-radius: 3px; font-size: 11px; }
+.tax-所得税 { background: #dbeafe; color: #1e40af; }
+.tax-法人税 { background: #dcfce7; color: #166534; }
+.tax-消費税 { background: #fef9c3; color: #854d0e; }
+.tax-相続税 { background: #fce7f3; color: #9d174d; }
+.tax-贈与税 { background: #f3e8ff; color: #6b21a8; }
+.tax-印紙税 { background: #fee2e2; color: #991b1b; }
+.tax-国税徴収 { background: #e0e7ff; color: #3730a3; }
+td.issues { font-size: 12px; color: #666; max-width: 200px; }
+td.provisions { font-size: 11px; color: #888; max-width: 180px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.stats { margin: 15px 0; padding: 12px; background: #e0f2fe; border-radius: 6px; }
+.stats span { margin-right: 20px; }
+.filter { margin: 15px 0; }
+.filter select { padding: 6px 12px; margin-right: 10px; border: 1px solid #ccc; border-radius: 4px; }
 </style>
 </head>
 <body>
 <h1>国税庁判決事例集 2023</h1>
-<p>判決数: <strong>117件</strong></p>
+<div class="stats">
+<span><strong>判決数:</strong> 117件</span>
+<span class="tax-tag tax-所得税">所得税: 62件</span>
+<span class="tax-tag tax-法人税">法人税: 32件</span>
+<span class="tax-tag tax-消費税">消費税: 26件</span>
+<span class="tax-tag tax-相続税">相続税: 18件</span>
+<span class="tax-tag tax-国税徴収">国税徴収: 6件</span>
+</div>
+<div class="filter">
+<select id="taxFilter" onchange="filterTable()">
+<option value="">全税目</option>
+<option value="印紙税">印紙税</option>
+<option value="国税徴収">国税徴収</option>
+<option value="所得税">所得税</option>
+<option value="法人税">法人税</option>
+<option value="消費税">消費税</option>
+<option value="登録免許税">登録免許税</option>
+<option value="相続税">相続税</option>
+<option value="贈与税">贈与税</option>
+<option value="酒税">酒税</option>
+</select>
+<select id="resultFilter" onchange="filterTable()">
+<option value="">全結果</option>
+<option value="却下">却下</option>
+<option value="取消">取消</option>
+<option value="棄却">棄却</option>
+<option value="認容">認容</option>
+</select>
+</div>
 <table>
-<tr><th>番号</th><th>事件名</th><th>裁判所</th><th>判決日</th><th>結果</th></tr>
+<thead>
+<tr><th>番号</th><th>事件名</th><th>税目</th><th>争点</th><th>日付</th><th>結果</th></tr>
+</thead>
+<tbody>
 <tr>
 <td><a href="13799.html">13799</a></td>
 <td>大阪地方裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求事件</td>
-<td>大阪地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１月１１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13800.html">13800</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税等決定処分取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年１月１７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13801.html">13801</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 不当利得返還等請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">修正申告の有効性, 加算税の適法性...</td>
 <td>令和５年１月１８日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13802.html">13802</a></td>
 <td>津地方裁判所 令和●●年（○○）第●●号 更正すべき理由がない旨の通知処分等取消請求事件</td>
-<td>津地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span> <span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１月１９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13803.html">13803</a></td>
 <td>の更正すべき理由がない旨の通知処分取消請求上告及び上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年１月１９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13804.html">13804</a></td>
 <td>那覇地方裁判所 令和●●年（○○）第●●号 所得税課税処分取消請求事件</td>
-<td>那覇地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１月２４日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13805.html">13805</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 消費税更正処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１月２５日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13806.html">13806</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１月２５日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13807.html">13807</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 損害賠償請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１月２５日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13808.html">13808</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 相続税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１月２６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13809.html">13809</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 更正請求却下処分取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１月２７日</td>
 <td class="result-却下">却下</td>
 </tr>
 <tr>
 <td><a href="13810.html">13810</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 法人税更正処分取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年１月２７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13811.html">13811</a></td>
 <td>最高裁判所（第二小法廷） 令和●●年（○○）第●●号 所得税等決定処分取消請求上告事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年１月２７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13812.html">13812</a></td>
 <td>大阪地方裁判所 令和●●年（○○）第●●号 損害賠償請求事件</td>
-<td>大阪地方裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">同族会社の行為計算否認, 相続財産の範囲...</td>
 <td>令和５年１月３０日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13813.html">13813</a></td>
 <td>税務訴訟資料 第２７３号（順号１３８１３）</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年２月８日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13814.html">13814</a></td>
 <td>奈良地方裁判所 令和●●年（○○）第●●号 更正処分取消請求事件</td>
-<td>奈良地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年２月１４日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13815.html">13815</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 相続税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年２月１６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13816.html">13816</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 還付金（過誤納金）返還請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues"></td>
 <td>令和５年２月１６日</td>
 <td class="result-認容">認容</td>
 </tr>
 <tr>
 <td><a href="13817.html">13817</a></td>
 <td>税務訴訟資料 第２７３号（順号１３８１７）</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年２月１６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13818.html">13818</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 法人税等更正処分等取消請求事件、更正をすべき</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年２月１７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13819.html">13819</a></td>
 <td>神戸地方裁判所 令和●●年（○○）第●●号 相続税更正処分の無効確認請求事件</td>
-<td>神戸地方裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年２月２１日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13820.html">13820</a></td>
 <td>税務訴訟資料 第２７３号（順号１３８２０）</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性</td>
 <td>令和５年２月２１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13821.html">13821</a></td>
 <td>新潟地方裁判所 令和●●年（○○）第●●号 更正請求の理由なし通知の取消請求事件</td>
-<td>新潟地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年２月２７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13822.html">13822</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税決定処分取消等請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年３月２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13823.html">13823</a></td>
 <td>請求上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span> <span class="tax-tag tax-消費税">消費税</span> <span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年３月６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13824.html">13824</a></td>
 <td>求事件について、同裁判所が令和３年４月２１日に言い渡した判決に対し、上告人から上告があっ</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年３月６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13825.html">13825</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 印紙税過怠税賦課処分取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-印紙税">印紙税</span></td>
+<td class="issues">課税処分の適法性, 非課税取引該当性</td>
 <td>令和５年３月８日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13826.html">13826</a></td>
 <td>東京地方裁判所 平成●●年（○○）第●●号 課税処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-印紙税">印紙税</span> <span class="tax-tag tax-国税徴収">国税徴収</span> <span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年３月８日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13827.html">13827</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年３月９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13828.html">13828</a></td>
 <td>税、並びに消費税及び地方消費税更正処分等取消請求事件（以下、各事件をそれぞれ「第●●号事</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年３月９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13829.html">13829</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税更正処分取消等請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年３月１４日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13830.html">13830</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税更正処分取消等請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年３月１４日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13831.html">13831</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年３月１６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13832.html">13832</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 法人税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年３月１６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13833.html">13833</a></td>
 <td>大阪高等裁判所 令和●●年（○○）第●●号 相続税決定処分取消等請求控訴事件</td>
-<td>大阪高等裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年３月１６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13835.html">13835</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 再調査決定取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性</td>
 <td>令和５年３月２２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13836.html">13836</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 法人税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年３月２３日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13837.html">13837</a></td>
 <td>更正処分等取消請求上告及び上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年３月２４日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13838.html">13838</a></td>
 <td>通知処分等取消請求上告及び上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年３月２４日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13839.html">13839</a></td>
 <td>神戸地方裁判所 令和●●年（○○）第●●号 取消請求事件</td>
-<td>神戸地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年３月２８日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13840.html">13840</a></td>
 <td>の通知処分取消等請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年３月３０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13841.html">13841</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 課税処分取消等請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年４月１２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13842.html">13842</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 修正申告無効確認等請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">更正請求の可否, 修正申告の有効性...</td>
 <td>令和５年４月１９日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13843.html">13843</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年４月１９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13844.html">13844</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年４月２１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13845.html">13845</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 源泉所得税納税告知処分取消等請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年４月２６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13846.html">13846</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 損害賠償請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">不当利得返還請求, 国家賠償請求</td>
 <td>令和５年４月２７日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13847.html">13847</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 法人税額等の更正処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年４月２７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13848.html">13848</a></td>
 <td>最高裁判所（第一小法廷） 令和●●年（○○）第●●号 所得税等決定処分取消請求上告事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年５月１０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13849.html">13849</a></td>
 <td>最高裁判所（第一小法廷） 令和●●年（○○）第●●号 過少申告加算税取消請求上告受理事件</td>
-<td>最高裁判所</td>
+<td></td>
+<td class="issues">加算税の適法性</td>
 <td>令和５年５月１０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13850.html">13850</a></td>
 <td>件（以下、順に「第１事件」、「第２号事件」という。）</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年５月１２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13851.html">13851</a></td>
 <td>償等請求上告及び上告受理事件</td>
-<td>最高裁判所</td>
+<td></td>
+<td class="issues"></td>
 <td>令和５年５月１９日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13852.html">13852</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年５月２４日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13853.html">13853</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 消費税及び地方消費税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年５月２５日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13854.html">13854</a></td>
 <td>税務訴訟資料 第２７３号（順号１３８５４）</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年５月２５日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13855.html">13855</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 法人税賦課決定処分等取消請求事件（第１事件）、</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年５月３０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13856.html">13856</a></td>
 <td>税更正処分等取消請求上告及び上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年６月１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13857.html">13857</a></td>
 <td>更正処分等取消請求上告及び上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年６月７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13858.html">13858</a></td>
 <td>件（以下、順に「第１事件」、「第２事件」という。）</td>
-<td>熊本地方裁判所</td>
+<td><span class="tax-tag tax-印紙税">印紙税</span> <span class="tax-tag tax-国税徴収">国税徴収</span> <span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span> <span class="tax-tag tax-消費税">消費税</span> <span class="tax-tag tax-登録免許税">登録免許税</span> <span class="tax-tag tax-相続税">相続税</span> <span class="tax-tag tax-贈与税">贈与税</span> <span class="tax-tag tax-酒税">酒税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年６月９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13859.html">13859</a></td>
 <td>名古屋地方裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求事件</td>
-<td>名古屋地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年６月２２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13860.html">13860</a></td>
 <td>大阪地方裁判所 令和●●年（○○）第●●号 課税処分の取消請求事件</td>
-<td>大阪地方裁判所</td>
+<td><span class="tax-tag tax-国税徴収">国税徴収</span> <span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 延滞税の適法性</td>
 <td>令和５年６月２２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13861.html">13861</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 相続税更正処分取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年６月２９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13862.html">13862</a></td>
 <td>福岡高等裁判所 令和●●年（○○）第●●号 法人税青色申告承認取消処分取消請求控訴事件</td>
-<td>福岡高等裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年６月３０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13863.html">13863</a></td>
 <td>得返還等請求上告及び上告受理事件</td>
-<td>最高裁判所</td>
+<td></td>
+<td class="issues">不当利得返還請求</td>
 <td>令和５年７月７日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13864.html">13864</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 法人税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年７月２０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13865.html">13865</a></td>
 <td>の通知処分取消等請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-国税徴収">国税徴収</span> <span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年７月２０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13866.html">13866</a></td>
 <td>大阪高等裁判所 令和●●年（○○）第●●号 所得税更正処分取消請求控訴事件</td>
-<td>大阪高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年７月２６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13867.html">13867</a></td>
 <td>大阪高等裁判所 令和●●年（○○）第●●号 法人事業に係る処分取消請求控訴事件</td>
-<td>大阪高等裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年７月２７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13868.html">13868</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年７月２８日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13869.html">13869</a></td>
 <td>広島地方裁判所 令和●●年（○○）第●●号 法人税更正処分等取消請求事件</td>
-<td>広島地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年７月３１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13870.html">13870</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税等決定処分取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年８月１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13871.html">13871</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年８月２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13872.html">13872</a></td>
 <td>少申告加算税の各賦課決定処分の取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年８月３日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13873.html">13873</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 消費税及び地方消費税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年８月２２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13874.html">13874</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 消費税更正処分取消等請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年８月２９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13875.html">13875</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 消費税税額等更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年８月２９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13876.html">13876</a></td>
 <td>訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年８月３０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13877.html">13877</a></td>
 <td>大阪高等裁判所 令和●●年（○○）第●●号 所得税更正処分取消等請求控訴事件</td>
-<td>大阪高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年８月３１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13878.html">13878</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 相続税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年８月３１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13879.html">13879</a></td>
 <td>控訴事件</td>
-<td>名古屋高等裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年９月６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13880.html">13880</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 消費税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年９月８日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13881.html">13881</a></td>
 <td>神戸地方裁判所 令和●●年（○○）第●●号 相続税更正処分の無効の確認請求事件</td>
-<td>神戸地方裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年９月１２日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13882.html">13882</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 賦課税決定と更正処分取消等請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-国税徴収">国税徴収</span> <span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 国家賠償請求</td>
 <td>令和５年９月１２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13883.html">13883</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 法人税更正処分取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 実質課税の原則</td>
 <td>令和５年９月１３日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13884.html">13884</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 更正請求却下処分取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年９月１４日</td>
 <td class="result-却下">却下</td>
 </tr>
 <tr>
 <td><a href="13885.html">13885</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 消費税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年９月１９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13886.html">13886</a></td>
 <td>分取消等請求事件</td>
-<td>静岡地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年９月２１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13887.html">13887</a></td>
 <td>大阪高等裁判所 令和●●年（○○）第●●号 更正処分取消請求控訴事件</td>
-<td>大阪高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年９月２１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13888.html">13888</a></td>
 <td>の通知処分取消等請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年３月３０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13889.html">13889</a></td>
 <td>福岡高等裁判所那覇支部 令和●●年（○○）第●●号 所得税課税処分取消請求控訴事件</td>
-<td>福岡高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年９月２８日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13890.html">13890</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 消費税及び地方消費税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年９月２９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13892.html">13892</a></td>
 <td>水戸地方裁判所 令和●●年（○○）第●●号 課税処分取消請求事件</td>
-<td>水戸地方裁判所</td>
+<td><span class="tax-tag tax-国税徴収">国税徴収</span> <span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１０月１２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13893.html">13893</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 印紙税過怠税賦課処分取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-印紙税">印紙税</span></td>
+<td class="issues">課税処分の適法性, 非課税取引該当性</td>
 <td>令和５年１０月１８日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13894.html">13894</a></td>
 <td>京都地方裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求事件</td>
-<td>京都地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１０月２０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13895.html">13895</a></td>
 <td>税更正処分等取消請求上告及び上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年１０月２５日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13896.html">13896</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税等決定処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１０月２７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13897.html">13897</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 国家賠償請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">国家賠償請求</td>
 <td>令和５年１０月２７日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13898.html">13898</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 法人税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１０月３１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13899.html">13899</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 所得税決定処分取消等請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１１月１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13900.html">13900</a></td>
 <td>件、令和●●年（○○）第●●号 同附帯上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１１月６日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13901.html">13901</a></td>
 <td>税更正処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１１月９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13902.html">13902</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 課税処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１１月１５日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13903.html">13903</a></td>
 <td>償請求上告提起及び上告受理申立て事件</td>
-<td>最高裁判所</td>
+<td></td>
+<td class="issues"></td>
 <td>令和５年１１月２２日</td>
 <td class="result-棄却">棄却</td>
 </tr>
 <tr>
 <td><a href="13904.html">13904</a></td>
 <td>名古屋高等裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求控訴事件</td>
-<td>名古屋高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１１月２４日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13905.html">13905</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 更正請求の理由なし通知の取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１１月２９日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13906.html">13906</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１１月３０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13907.html">13907</a></td>
 <td>大阪高等裁判所 令和●●年（○○）第●●号 取消請求控訴事件</td>
-<td>大阪高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１１月３０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13908.html">13908</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 所得税更正処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１１月３０日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13909.html">13909</a></td>
 <td>税務訴訟資料 第２７３号（順号１３９０９）</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年１２月１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13910.html">13910</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 法人税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年１２月７日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13911.html">13911</a></td>
 <td>額等の更正処分等取消請求上告及び上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-法人税">法人税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年１２月１３日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13912.html">13912</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 相続税更正処分等取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１２月１３日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13913.html">13913</a></td>
 <td>東京高等裁判所 令和●●年（○○）第●●号 相続税更正処分取消請求控訴事件</td>
-<td>東京高等裁判所</td>
+<td><span class="tax-tag tax-相続税">相続税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１２月１３日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13914.html">13914</a></td>
 <td>福岡高等裁判所 令和●●年（○○）第●●号 所得税等更正処分の一部取消請求控訴事件</td>
-<td>福岡高等裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">更正請求の可否, 課税処分の適法性...</td>
 <td>令和５年１２月２１日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13915.html">13915</a></td>
 <td>最高裁判所（第二小法廷） 令和●●年（○○）第●●号 所得税更正処分取消請求上告受理事件</td>
-<td>最高裁判所</td>
+<td><span class="tax-tag tax-所得税">所得税</span></td>
+<td class="issues">課税処分の適法性</td>
 <td>令和５年１２月２２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13916.html">13916</a></td>
 <td>東京地方裁判所 令和●●年（○○）第●●号 消費税及び地方消費税更正処分等取消請求事件</td>
-<td>東京地方裁判所</td>
+<td><span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性</td>
 <td>令和５年１２月２２日</td>
 <td class="result-取消">取消</td>
 </tr>
 <tr>
 <td><a href="13917.html">13917</a></td>
 <td>仙台地方裁判所 令和●●年（○○）第●●号 更正処分取消請求事件</td>
-<td>仙台地方裁判所</td>
+<td><span class="tax-tag tax-印紙税">印紙税</span> <span class="tax-tag tax-所得税">所得税</span> <span class="tax-tag tax-法人税">法人税</span> <span class="tax-tag tax-消費税">消費税</span></td>
+<td class="issues">課税処分の適法性, 加算税の適法性...</td>
 <td>令和５年１２月２５日</td>
 <td class="result-取消">取消</td>
 </tr>
+</tbody>
 </table>
+<script>
+function filterTable() {
+  var taxType = document.getElementById('taxFilter').value;
+  var result = document.getElementById('resultFilter').value;
+  var rows = document.querySelectorAll('tbody tr');
+
+  rows.forEach(function(row) {
+    var taxCell = row.cells[2].textContent;
+    var resultCell = row.cells[5].textContent;
+    var showTax = !taxType || taxCell.includes(taxType);
+    var showResult = !result || resultCell === result;
+    row.style.display = (showTax && showResult) ? '' : 'none';
+  });
+}
+</script>
 </body>
 </html>
