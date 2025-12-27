@@ -114,6 +114,49 @@ def clean_text(text: str) -> str:
     return text.strip()
 
 
+def extract_case_title(lines: list) -> str:
+    """複数行にまたがる事件名を抽出"""
+    # 最初の5行を結合（PDF改行対応）、改行で分断された文字を結合
+    combined = ' '.join(line.strip() for line in lines[:5] if line.strip())
+    # 「事 件」→「事件」のように分断されたものを結合
+    combined = re.sub(r'事\s+件', '事件', combined)
+
+    # パターン1: 最後の「第●●号」の後に続く事件名を抽出
+    # 例: "令和●●年（○○）第●●号 所得税更正処分等取消請求事件"
+    # 「号」の後のスペースや「、」を挟んで日本語の事件名が続く
+    match = re.search(r'第[●\d]+号[）\s、]*([ぁ-んァ-ン一-龯々〆〇等の一部]+?(?:請求|処分|決定|通知)?事件)', combined)
+    if match:
+        title = match.group(1).strip()
+        # 先頭の不要文字を削除
+        title = re.sub(r'^[、\s]+', '', title)
+        if len(title) >= 8:
+            return title
+
+    # パターン2: 税目キーワード + 〜事件の形式
+    # 例: "所得税更正処分等取消請求事件", "相続税の更正すべき理由がない旨の通知処分取消請求上告及び上告受理事件"
+    tax_keywords = '所得税|法人税|消費税|相続税|贈与税|印紙税|登録免許税|更正|課税|納税|損害賠償|不当利得|還付'
+    match = re.search(rf'({tax_keywords})[ぁ-んァ-ン一-龯々〆〇等の一部請求処分決定通知取消控訴上告受理\s]+事件', combined)
+    if match:
+        title = match.group(0).strip()
+        if len(title) >= 8:
+            return title
+
+    # パターン3: 単純に日本語 + 事件を探す（フォールバック）
+    match = re.search(r'([ぁ-んァ-ン一-龯々〆〇]{5,}事件)', combined)
+    if match:
+        title = match.group(1).strip()
+        return title
+
+    return ''
+
+
+def clean_title(title: str) -> str:
+    """タイトルを整形"""
+    # 余分なスペースを削除
+    title = re.sub(r'\s+', '', title)
+    return title
+
+
 def parse_hanketsu(text: str, case_number: str) -> dict:
     """判決テキストを解析してメタデータと本文を抽出"""
     result = {
@@ -128,6 +171,9 @@ def parse_hanketsu(text: str, case_number: str) -> dict:
 
     lines = text.split('\n')
 
+    # 事件名を抽出（複数行対応）
+    result['title'] = clean_title(extract_case_title(lines))
+
     # メタデータ抽出（最初の15行から）
     for i, line in enumerate(lines[:15]):
         line = line.strip()
@@ -135,7 +181,7 @@ def parse_hanketsu(text: str, case_number: str) -> dict:
         # 裁判所名
         if '裁判所' in line and not result['court']:
             # 裁判所名だけ抽出
-            court_match = re.search(r'(東京|大阪|名古屋|福岡|仙台|札幌|広島|高松|[\w]+)(高等|地方|簡易)?裁判所', line)
+            court_match = re.search(r'(最高裁判所|東京|大阪|名古屋|福岡|仙台|札幌|広島|高松|熊本|津|奈良|那覇|神戸|横浜|さいたま|千葉|京都|[\w]+)(高等|地方|簡易)?裁判所', line)
             if court_match:
                 result['court'] = court_match.group()
 
@@ -146,18 +192,19 @@ def parse_hanketsu(text: str, case_number: str) -> dict:
 
         # 判決結果（棄却・認容など）
         if not result['result']:
-            for keyword in ['棄却', '認容', '却下', '取消', '一部認容']:
+            for keyword in ['棄却', '認容', '却下', '取消', '一部認容', '不受理']:
                 if keyword in line:
                     result['result'] = keyword
                     break
 
-        # 事件名
-        if '事件' in line and not result['title']:
-            result['title'] = line
-
-    # タイトルがなければ最初の行を使用
-    if not result['title'] and lines:
-        result['title'] = lines[0].strip()[:100]
+    # タイトルがなければフォールバック
+    if not result['title']:
+        # 最初の5行を結合して事件を探す
+        combined = ' '.join(line.strip() for line in lines[:5] if line.strip())
+        if '事件' in combined:
+            result['title'] = combined[:100]
+        elif lines:
+            result['title'] = lines[0].strip()[:100]
 
     # テキスト全体を保存
     cleaned = clean_text(text)
