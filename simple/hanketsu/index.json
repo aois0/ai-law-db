@@ -4,2890 +4,4941 @@
     "title": "相続税更正処分取消等請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年１月１３日",
-    "result": "取消"
+    "date_iso": "2021-01-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13504",
     "title": "法人税更正請求に対する更正すべき理由がない旨の通知処分取消等請求控訴事件",
     "court": "福岡高等裁判所",
     "date": "令和３年１月１３日",
-    "result": "取消"
+    "date_iso": "2021-01-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13505",
     "title": "償請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１月１４日",
-    "result": "棄却"
+    "date_iso": "2021-01-14",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13506",
     "title": "所得税決定処分取消等請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年１月１４日",
-    "result": "取消"
+    "date_iso": "2021-01-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13507",
     "title": "法人税更正処分取消等請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年１月１４日",
-    "result": "取消"
+    "date_iso": "2021-01-14",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13508",
     "title": "法人税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１月１５日",
-    "result": "取消"
+    "date_iso": "2021-01-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13509",
     "title": "国家賠償請求事件",
     "court": "広島地方裁判所",
     "date": "令和３年１月１８日",
-    "result": "棄却"
+    "date_iso": "2021-01-18",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13510",
     "title": "相続税債務不存在確認等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１月１９日",
-    "result": "棄却"
+    "date_iso": "2021-01-19",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13511",
     "title": "所得税及び復興特別所得税の更正及び加算税の賦課決定処分取消請求上告事件",
     "court": "最高裁判所",
     "date": "令和３年１月２２日",
-    "result": "取消"
+    "date_iso": "2021-01-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13512",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年１月２７日",
-    "result": "取消"
+    "date_iso": "2021-01-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13513",
     "title": "所得税決定処分等取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年１月２７日",
-    "result": "取消"
+    "date_iso": "2021-01-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13514",
     "title": "職権による減額更正義務付け等請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年１月２８日",
-    "result": "棄却"
+    "date_iso": "2021-01-28",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13515",
     "title": "課税処分取消等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年１月２８日",
-    "result": "取消"
+    "date_iso": "2021-01-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13516",
     "title": "裁決取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年１月２８日",
-    "result": "取消"
+    "date_iso": "2021-01-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13517",
     "title": "相続税取消請求事件",
     "court": "千葉地方裁判所",
     "date": "令和３年１月２９日",
-    "result": "取消"
+    "date_iso": "2021-01-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13518",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年１月２９日",
-    "result": "取消"
+    "date_iso": "2021-01-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13519",
     "title": "更正しないとの通知処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年２月３日",
-    "result": "取消"
+    "date_iso": "2021-02-03",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13520",
     "title": "所得税及び消費税更正処分の義務付け等請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年２月５日",
-    "result": "棄却"
+    "date_iso": "2021-02-05",
+    "result": "棄却",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13521",
     "title": "法人税更正処分等取消請求事件",
     "court": "松江地方裁判所",
     "date": "令和３年２月８日",
-    "result": "取消"
+    "date_iso": "2021-02-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13522",
     "title": "更正の請求に理由がない旨の通知処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年２月１０日",
-    "result": "取消"
+    "date_iso": "2021-02-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13523",
     "title": "処分撤回請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年２月１２日",
-    "result": "却下"
+    "date_iso": "2021-02-12",
+    "result": "却下",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13524",
     "title": "消費税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年２月１２日",
-    "result": "取消"
+    "date_iso": "2021-02-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13525",
     "title": "所得税更正処分取消等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年２月１９日",
-    "result": "取消"
+    "date_iso": "2021-02-19",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13526",
     "title": "更正請求棄却処分取り消し請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年２月２４日",
-    "result": "棄却"
+    "date_iso": "2021-02-24",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13527",
     "title": "不当利得返還請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年２月２５日",
-    "result": "棄却"
+    "date_iso": "2021-02-25",
+    "result": "棄却",
+    "topics": [],
+    "laws": [
+      "法人税法132条"
+    ],
+    "keywords": []
   },
   {
     "number": "13528",
     "title": "分取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年２月２５日",
-    "result": "取消"
+    "date_iso": "2021-02-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13529",
     "title": "消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年２月２６日",
-    "result": "取消"
+    "date_iso": "2021-02-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13530",
     "title": "重加算税賦課決定処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年２月２６日",
-    "result": "取消"
+    "date_iso": "2021-02-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13531",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年２月２６日",
-    "result": "取消"
+    "date_iso": "2021-02-26",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "租税特別措置法66条の6",
+      "租税特別措置法68条の90"
+    ],
+    "keywords": [
+      "軽課税国",
+      "特定外国子会社",
+      "措置法６６条の６",
+      "適用除外要件",
+      "外国子会社合算税制",
+      "タックスヘイブン",
+      "措置法６８条の９０"
+    ]
   },
   {
     "number": "13532",
     "title": "消費税及び地方消費税更正処分等取消請求事件",
     "court": "名古屋地方裁判所",
     "date": "令和３年３月１日",
-    "result": "取消"
+    "date_iso": "2021-03-01",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13533",
     "title": "通知処分取消等請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年３月２日",
-    "result": "取消"
+    "date_iso": "2021-03-02",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13534",
     "title": "更正をすべき理由がない旨の通知処分取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年３月４日",
-    "result": "取消"
+    "date_iso": "2021-03-04",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13535",
     "title": "更正処分取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年３月５日",
-    "result": "取消"
+    "date_iso": "2021-03-05",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13536",
     "title": "所得税更正処分等取消請求事件",
     "court": "山形地方裁判所",
     "date": "令和３年３月９日",
-    "result": "取消"
+    "date_iso": "2021-03-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13537",
     "title": "損害賠償請求上告事件",
     "court": "最高裁判所",
     "date": "令和３年３月９日",
-    "result": "棄却"
+    "date_iso": "2021-03-09",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13538",
     "title": "重加算税賦課決定処分取消請求事件",
     "court": "札幌地方裁判所",
     "date": "令和３年３月１０日",
-    "result": "取消"
+    "date_iso": "2021-03-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13539",
     "title": "更正処分等取消請求事件",
     "court": "福岡地方裁判所",
     "date": "令和３年３月１０日",
-    "result": "取消"
+    "date_iso": "2021-03-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13540",
     "title": "消費税決定処分等取消請求事件",
     "court": "福岡地方裁判所",
     "date": "令和３年３月１０日",
-    "result": "取消"
+    "date_iso": "2021-03-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13541",
     "title": "法人税更正処分取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年３月１１日",
-    "result": "取消"
+    "date_iso": "2021-03-11",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13542",
     "title": "法人税及び地方法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年３月１１日",
-    "result": "取消"
+    "date_iso": "2021-03-11",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13543",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年３月１６日",
-    "result": "取消"
+    "date_iso": "2021-03-16",
+    "result": "取消",
+    "topics": [
+      "CFC",
+      "移転価格"
+    ],
+    "laws": [
+      "法人税法22条",
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "特定外国子会社",
+      "措置法６６条の６",
+      "適用除外要件",
+      "外国子会社合算税制",
+      "国外関連者"
+    ]
   },
   {
     "number": "13544",
     "title": "通知処分取消等請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年３月１８日",
-    "result": "取消"
+    "date_iso": "2021-03-18",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13545",
     "title": "原処分取消請求事件",
     "court": "横浜地方裁判所",
     "date": "令和３年３月２４日",
-    "result": "取消"
+    "date_iso": "2021-03-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13546",
     "title": "所得税決定処分取消等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年３月３０日",
-    "result": "取消"
+    "date_iso": "2021-03-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13547",
     "title": "法人税更正処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年３月３０日",
-    "result": "取消"
+    "date_iso": "2021-03-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13548",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年４月１４日",
-    "result": "取消"
+    "date_iso": "2021-04-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13549",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年４月１４日",
-    "result": "取消"
+    "date_iso": "2021-04-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13550",
     "title": "所得税の納税告知処分取消等請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年４月１５日",
-    "result": "取消"
+    "date_iso": "2021-04-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13551",
     "title": "消費税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年４月２１日",
-    "result": "取消"
+    "date_iso": "2021-04-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13552",
     "title": "所得税の青色申告承認の取消処分等の取消請求事件",
     "court": "名古屋地方裁判所",
     "date": "令和３年４月２２日",
-    "result": "取消"
+    "date_iso": "2021-04-22",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [],
+    "keywords": [
+      "管理支配基準"
+    ]
   },
   {
     "number": "13553",
     "title": "所得税更正処分等取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年４月２２日",
-    "result": "取消"
+    "date_iso": "2021-04-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13554",
     "title": "過誤納金返還請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年４月２２日",
-    "result": "却下"
+    "date_iso": "2021-04-22",
+    "result": "却下",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13555",
     "title": "更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年４月２３日",
-    "result": "取消"
+    "date_iso": "2021-04-23",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13556",
     "title": "相続税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年４月２７日",
-    "result": "取消"
+    "date_iso": "2021-04-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13557",
     "title": "二重課税された納付済源泉所得税の還付請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年４月２７日",
-    "result": "棄却"
+    "date_iso": "2021-04-27",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13558",
     "title": "更正処分取消等更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年４月２７日",
-    "result": "取消"
+    "date_iso": "2021-04-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13559",
     "title": "所得税決定処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年４月２８日",
-    "result": "取消"
+    "date_iso": "2021-04-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13560",
     "title": "消費税等更正処分等取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年４月２８日",
-    "result": "取消"
+    "date_iso": "2021-04-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13561",
     "title": "更正の請求が出来る期間の起算日誤認請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年５月１３日",
-    "result": "棄却"
+    "date_iso": "2021-05-13",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13562",
     "title": "法人税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年５月１４日",
-    "result": "取消"
+    "date_iso": "2021-05-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13563",
     "title": "重加算税賦課決定処分取消請求事件",
     "court": "札幌地方裁判所",
     "date": "令和３年５月２０日",
-    "result": "取消"
+    "date_iso": "2021-05-20",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13564",
     "title": "所得税更正処分取消等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年５月２０日",
-    "result": "取消"
+    "date_iso": "2021-05-20",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13565",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年５月２０日",
-    "result": "取消"
+    "date_iso": "2021-05-20",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13566",
     "title": "所得税に係る更正すべき理由がない処分取消請求事件",
     "court": "京都地方裁判所",
     "date": "令和３年５月２１日",
-    "result": "取消"
+    "date_iso": "2021-05-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13567",
     "title": "所得税更正処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年５月２１日",
-    "result": "取消"
+    "date_iso": "2021-05-21",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13568",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "名古屋高等裁判所",
     "date": "令和３年５月２６日",
-    "result": "取消"
+    "date_iso": "2021-05-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13569",
     "title": "決定処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年５月２７日",
-    "result": "取消"
+    "date_iso": "2021-05-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13570",
     "title": "更正処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年５月２７日",
-    "result": "取消"
+    "date_iso": "2021-05-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13571",
     "title": "還付金請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年６月１日",
-    "result": "不受理"
+    "date_iso": "2021-06-01",
+    "result": "不受理",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13572",
     "title": "消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年６月２日",
-    "result": "取消"
+    "date_iso": "2021-06-02",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13573",
     "title": "相続税更正処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年６月２日",
-    "result": "取消"
+    "date_iso": "2021-06-02",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13574",
     "title": "法人税更正処分取消等請求控訴事件",
     "court": "札幌高等裁判所",
     "date": "令和３年６月４日",
-    "result": "取消"
+    "date_iso": "2021-06-04",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13575",
     "title": "法人税更正処分取消等請求事件",
     "court": "広島地方裁判所",
     "date": "令和３年６月８日",
-    "result": "取消"
+    "date_iso": "2021-06-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13576",
     "title": "上告受理申立事件",
     "court": "最高裁判所",
     "date": "令和３年６月１１日",
-    "result": "棄却"
+    "date_iso": "2021-06-11",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13577",
     "title": "課税処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年６月１６日",
-    "result": "取消"
+    "date_iso": "2021-06-16",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13578",
     "title": "所得税決定処分取消等請求事件",
     "court": "広島地方裁判所",
     "date": "令和３年６月２３日",
-    "result": "取消"
+    "date_iso": "2021-06-23",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13579",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "名古屋高等裁判所",
     "date": "令和３年６月２４日",
-    "result": "取消"
+    "date_iso": "2021-06-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13580",
     "title": "相続税更正処分等取消請求上告事件",
     "court": "最高裁判所",
     "date": "令和３年６月２４日",
-    "result": "取消"
+    "date_iso": "2021-06-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13581",
     "title": "税賦課決定処分取消請求上告提起及び上告受理申立て事件",
     "court": "最高裁判所",
     "date": "令和３年６月２５日",
-    "result": "取消"
+    "date_iso": "2021-06-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13582",
     "title": "法人税更正請求に対する更正すべき理由がない旨の通知処分取消等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年６月２９日",
-    "result": "取消"
+    "date_iso": "2021-06-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13583",
     "title": "更正すべき理由がない旨の通知処分取消請求控訴事件",
     "court": "名古屋高等裁判所",
     "date": "令和３年６月３０日",
-    "result": "取消"
+    "date_iso": "2021-06-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13584",
     "title": "消費税等更正処分等取消請求上告及び上告受理申立事件",
     "court": "最高裁判所",
     "date": "令和３年７月２日",
-    "result": "取消"
+    "date_iso": "2021-07-02",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13585",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年７月７日",
-    "result": "取消"
+    "date_iso": "2021-07-07",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13586",
     "title": "相続税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年７月１４日",
-    "result": "取消"
+    "date_iso": "2021-07-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13587",
     "title": "消費税更正処分等取消請求事件",
     "court": "福岡地方裁判所",
     "date": "令和３年７月１４日",
-    "result": "取消"
+    "date_iso": "2021-07-14",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13588",
     "title": "二重課税された納付済源泉所得税の還付請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年７月１６日",
-    "result": "棄却"
+    "date_iso": "2021-07-16",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13589",
     "title": "告提起及び行政上告受理申立て事件",
     "court": "最高裁判所",
     "date": "令和３年７月１６日",
-    "result": "棄却"
+    "date_iso": "2021-07-16",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13590",
     "title": "所得税決定等取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年７月１９日",
-    "result": "取消"
+    "date_iso": "2021-07-19",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13591",
     "title": "相続税取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年７月２０日",
-    "result": "取消"
+    "date_iso": "2021-07-20",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13592",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年７月２０日",
-    "result": "取消"
+    "date_iso": "2021-07-20",
+    "result": "取消",
+    "topics": [
+      "CFC",
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "軽課税国",
+      "特定外国子会社",
+      "所在地国基準",
+      "適用除外要件",
+      "管理支配基準",
+      "非関連者基準",
+      "独立企業間価格"
+    ]
   },
   {
     "number": "13593",
     "title": "相続税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年７月２６日",
-    "result": "取消"
+    "date_iso": "2021-07-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13594",
     "title": "消費税及び地方消費税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年７月２９日",
-    "result": "取消"
+    "date_iso": "2021-07-29",
+    "result": "取消",
+    "topics": [
+      "CFC",
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法",
+      "特定外国子会社"
+    ]
   },
   {
     "number": "13595",
     "title": "消費税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年８月２４日",
-    "result": "取消"
+    "date_iso": "2021-08-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13596",
     "title": "所得税に係る重加算税の賦課決定処分取消請求事件",
     "court": "福岡地方裁判所",
     "date": "令和３年８月２５日",
-    "result": "取消"
+    "date_iso": "2021-08-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13597",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年８月２５日",
-    "result": "取消"
+    "date_iso": "2021-08-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13598",
     "title": "裁決取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年８月２７日",
-    "result": "取消"
+    "date_iso": "2021-08-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13599",
     "title": "消費税等更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年９月２日",
-    "result": "取消"
+    "date_iso": "2021-09-02",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13600",
     "title": "相続税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年９月８日",
-    "result": "取消"
+    "date_iso": "2021-09-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13601",
     "title": "裁決取消請求事件",
     "court": "さいたま地方裁判所",
     "date": "令和３年９月８日",
-    "result": "取消"
+    "date_iso": "2021-09-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13602",
     "title": "法人税及び地方法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年９月９日",
-    "result": "取消"
+    "date_iso": "2021-09-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13603",
     "title": "重加算税賦課決定処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年９月１５日",
-    "result": "取消"
+    "date_iso": "2021-09-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13604",
     "title": "所得税決定処分取消等請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年９月１６日",
-    "result": "取消"
+    "date_iso": "2021-09-16",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13605",
     "title": "所得税及び消費税更正処分の義務付け等請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年９月１７日",
-    "result": "棄却"
+    "date_iso": "2021-09-17",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13606",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年９月１７日",
-    "result": "取消"
+    "date_iso": "2021-09-17",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13607",
     "title": "更正処分等取消請求控訴事件",
     "court": "福岡高等裁判所",
     "date": "令和３年９月２２日",
-    "result": "取消"
+    "date_iso": "2021-09-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13608",
     "title": "法人税及び復興特別法人税の更正処分並びに加算税賦課決定処分取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年９月２８日",
-    "result": "取消"
+    "date_iso": "2021-09-28",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "措置法６６条の６",
+      "租税特別措置法６６条の６"
+    ]
   },
   {
     "number": "13609",
     "title": "更正すべき理由がない旨の通知処分取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年９月２９日",
-    "result": "取消"
+    "date_iso": "2021-09-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13610",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "仙台高等裁判所",
     "date": "令和３年９月３０日",
-    "result": "取消"
+    "date_iso": "2021-09-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13611",
     "title": "過誤納金返還等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年９月３０日",
-    "result": "棄却"
+    "date_iso": "2021-09-30",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13612",
     "title": "更正の請求が出来る期間の起算日誤認請求上告事件",
     "court": "最高裁判所",
     "date": "令和３年９月３０日",
-    "result": "棄却"
+    "date_iso": "2021-09-30",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13613",
     "title": "法人税および消費税等更正処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年１０月６日",
-    "result": "取消"
+    "date_iso": "2021-10-06",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13614",
     "title": "更正をすべき理由がない旨の通知処分取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年１０月７日",
-    "result": "取消"
+    "date_iso": "2021-10-07",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13615",
     "title": "過誤納金返還請求訴訟事件",
     "court": "東京地方裁判所",
     "date": "令和３年１０月７日",
-    "result": "棄却"
+    "date_iso": "2021-10-07",
+    "result": "棄却",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13616",
     "title": "上告受理申立て事件",
     "court": "東京高等裁判所",
     "date": "令和３年１０月８日",
-    "result": "却下"
+    "date_iso": "2021-10-08",
+    "result": "却下",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13617",
     "title": "所得税及び復興特別所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年１０月１２日",
-    "result": "取消"
+    "date_iso": "2021-10-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13618",
     "title": "更正処分取消及び不法行為に基づく慰謝料請求事件",
     "court": "新潟地方裁判所",
     "date": "令和３年１０月１４日",
-    "result": "取消"
+    "date_iso": "2021-10-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13619",
     "title": "消費税等更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年１０月１９日",
-    "result": "取消"
+    "date_iso": "2021-10-19",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13620",
     "title": "相続税の更正処分及び過少申告加算税の賦課決定処分取消請求事件",
     "court": "青森地方裁判所",
     "date": "令和３年１０月２２日",
-    "result": "取消"
+    "date_iso": "2021-10-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13621",
     "title": "消費税の還付申告についての処分取消請求事件",
     "court": "和歌山地方裁判所",
     "date": "令和３年１０月２６日",
-    "result": "取消"
+    "date_iso": "2021-10-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13622",
     "title": "消費税更正処分取消等請求事件",
     "court": "鹿児島地方裁判所",
     "date": "令和３年１０月２７日",
-    "result": "取消"
+    "date_iso": "2021-10-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13623",
     "title": "所得税更正処分取消等請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年１０月２８日",
-    "result": "取消"
+    "date_iso": "2021-10-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13624",
     "title": "処分撤回請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年１０月２８日",
-    "result": "棄却"
+    "date_iso": "2021-10-28",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13625",
     "title": "更正をすべき理由がない旨の通知処分取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１０月２８日",
-    "result": "取消"
+    "date_iso": "2021-10-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13626",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年１０月２９日",
-    "result": "取消"
+    "date_iso": "2021-10-29",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13627",
     "title": "所得税の納税告知処分取消等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１０月２９日",
-    "result": "取消"
+    "date_iso": "2021-10-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13628",
     "title": "所得税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１１月５日",
-    "result": "取消"
+    "date_iso": "2021-11-05",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13629",
     "title": "所得税等決定処分取消請求事件",
     "court": "岡山地方裁判所",
     "date": "令和３年１１月９日",
-    "result": "取消"
+    "date_iso": "2021-11-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13630",
     "title": "職権による減額更正義務付け等請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年１１月１１日",
-    "result": "棄却"
+    "date_iso": "2021-11-11",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13631",
     "title": "原処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年１１月１７日",
-    "result": "取消"
+    "date_iso": "2021-11-17",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13632",
     "title": "法人税更正処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年１１月２４日",
-    "result": "取消"
+    "date_iso": "2021-11-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13633",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年１１月２４日",
-    "result": "取消"
+    "date_iso": "2021-11-24",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "租税特別措置法66条の6",
+      "租税特別措置法68条の90"
+    ],
+    "keywords": [
+      "特定外国子会社",
+      "措置法６６条の６",
+      "適用除外要件",
+      "外国子会社合算税制",
+      "措置法６８条の９０"
+    ]
   },
   {
     "number": "13634",
     "title": "更正の請求拒否通知取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年１１月２５日",
-    "result": "取消"
+    "date_iso": "2021-11-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13635",
     "title": "所得税更正処分等取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年１１月２６日",
-    "result": "取消"
+    "date_iso": "2021-11-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13636",
     "title": "相続税の更正をすべき理由がない旨の通知処分取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和３年１１月２６日",
-    "result": "棄却"
+    "date_iso": "2021-11-26",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13637",
     "title": "更正請求棄却処分取り消し請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１２月２日",
-    "result": "棄却"
+    "date_iso": "2021-12-02",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13638",
     "title": "相続税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年１２月３日",
-    "result": "取消"
+    "date_iso": "2021-12-03",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13639",
     "title": "消費税決定処分等取消請求控訴事件",
     "court": "福岡高等裁判所",
     "date": "令和３年１２月７日",
-    "result": "取消"
+    "date_iso": "2021-12-07",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13640",
     "title": "法人税更正処分取消等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１２月７日",
-    "result": "取消"
+    "date_iso": "2021-12-07",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13641",
     "title": "所得税の更正及び過少申告加算税賦課決定の取消請求事件",
     "court": "名古屋地方裁判所",
     "date": "令和３年１２月８日",
-    "result": "棄却"
+    "date_iso": "2021-12-08",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13642",
     "title": "所得税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１２月１４日",
-    "result": "取消"
+    "date_iso": "2021-12-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13643",
     "title": "所得税決定処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１２月１６日",
-    "result": "取消"
+    "date_iso": "2021-12-16",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13644",
     "title": "法人税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和３年１２月２１日",
-    "result": "取消"
+    "date_iso": "2021-12-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13645",
     "title": "相続税更正処分等取消請求上告事件",
     "court": "最高裁判所",
     "date": "令和３年１２月２１日",
-    "result": "取消"
+    "date_iso": "2021-12-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13646",
     "title": "所得税決定等取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和３年１２月２２日",
-    "result": "取消"
+    "date_iso": "2021-12-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13647",
     "title": "課税された納付済源泉所得税の還付請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年１２月２２日",
-    "result": "棄却"
+    "date_iso": "2021-12-22",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13648",
     "title": "課税された納付済源泉所得税の還付請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和３年１２月２３日",
-    "result": "棄却"
+    "date_iso": "2021-12-23",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13649",
     "title": "法人税更正処分等取消請求事件",
     "court": "宇都宮地方裁判所",
     "date": "令和３年１２月２３日",
-    "result": "取消"
+    "date_iso": "2021-12-23",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13650",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和３年１２月２３日",
-    "result": "取消"
+    "date_iso": "2021-12-23",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13651",
     "title": "違憲な裁決の無効確認請求事件",
     "court": "神戸地方裁判所",
     "date": "令和３年１２月２３日",
-    "result": "棄却"
+    "date_iso": "2021-12-23",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13652",
     "title": "法人税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１月１１日",
-    "result": "取消"
+    "date_iso": "2022-01-11",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13653",
     "title": "更正処分取消等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１月１２日",
-    "result": "取消"
+    "date_iso": "2022-01-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13654",
     "title": "消費税更正処分等取消請求控訴事件",
     "court": "福岡高等裁判所",
     "date": "令和４年１月１３日",
-    "result": "取消"
+    "date_iso": "2022-01-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13655",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１月１３日",
-    "result": "取消"
+    "date_iso": "2022-01-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13656",
     "title": "課税処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１月１３日",
-    "result": "取消"
+    "date_iso": "2022-01-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13657",
     "title": "各過少申告加算税賦課決定処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１月１４日",
-    "result": "取消"
+    "date_iso": "2022-01-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13658",
     "title": "法人税更正請求に対する更正すべき理由がない旨の通知処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年１月１４日",
-    "result": "取消"
+    "date_iso": "2022-01-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13659",
     "title": "更正すべき理由がない旨の通知処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年１月１４日",
-    "result": "取消"
+    "date_iso": "2022-01-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13660",
     "title": "更正すべき理由がない旨の通知処分取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１月１４日",
-    "result": "不受理"
+    "date_iso": "2022-01-14",
+    "result": "不受理",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13661",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年１月２０日",
-    "result": "取消"
+    "date_iso": "2022-01-20",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "租税特別措置法68条の90"
+    ],
+    "keywords": [
+      "特定外国子会社",
+      "措置法68条の90",
+      "所在地国基準",
+      "実体基準",
+      "外国子会社合算税制",
+      "管理支配基準",
+      "適用除外要件",
+      "非関連者基準",
+      "租税特別措置法６８条の９０",
+      "措置法６８条の９０"
+    ]
   },
   {
     "number": "13662",
     "title": "消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年１月２１日",
-    "result": "取消"
+    "date_iso": "2022-01-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13663",
     "title": "法人税更正処分取消等請求控訴事件",
     "court": "広島高等裁判所",
     "date": "令和４年１月２８日",
-    "result": "取消"
+    "date_iso": "2022-01-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13664",
     "title": "法人税及び重加算税返還請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年１月２８日",
-    "result": "棄却"
+    "date_iso": "2022-01-28",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13665",
     "title": "源泉所得税納税告知処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年２月１日",
-    "result": "取消"
+    "date_iso": "2022-02-01",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13666",
     "title": "消費税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年２月３日",
-    "result": "取消"
+    "date_iso": "2022-02-03",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13667",
     "title": "所得税等決定処分取消請求事件",
     "court": "岡山地方裁判所",
     "date": "令和４年２月９日",
-    "result": "取消"
+    "date_iso": "2022-02-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13668",
     "title": "相続税更正処分取消等請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和４年２月９日",
-    "result": "取消"
+    "date_iso": "2022-02-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13669",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年２月１４日",
-    "result": "取消"
+    "date_iso": "2022-02-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13670",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年２月１４日",
-    "result": "取消"
+    "date_iso": "2022-02-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13671",
     "title": "税務訴訟資料 第２７２号（順号１３６７１） 東京地方裁判所 令和●●年（○○）第●●号 還付金（過誤納金）返還請求事件 国側当事者・国 令和４年２月１７日認容・控訴 判 決",
     "court": "東京地方裁判所",
     "date": "令和４年２月１７日",
-    "result": "認容"
+    "date_iso": "2022-02-17",
+    "result": "認容",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13672",
     "title": "所得税更正処分取消等請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年２月１８日",
-    "result": "取消"
+    "date_iso": "2022-02-18",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13673",
     "title": "還付手続実施請求事件",
     "court": "名古屋地方裁判所",
     "date": "令和４年２月２４日",
-    "result": "棄却"
+    "date_iso": "2022-02-24",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13674",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年２月２４日",
-    "result": "取消"
+    "date_iso": "2022-02-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13675",
     "title": "損害賠償請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年２月２５日",
-    "result": "棄却"
+    "date_iso": "2022-02-25",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13676",
     "title": "所得税通知処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年２月２５日",
-    "result": "取消"
+    "date_iso": "2022-02-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13677",
     "title": "更正すべき理由がない旨の通知処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年２月２５日",
-    "result": "取消"
+    "date_iso": "2022-02-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13678",
     "title": "相続税の無申告加算税の賦課決定処分及び延滞税取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年２月２５日",
-    "result": "取消"
+    "date_iso": "2022-02-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13679",
     "title": "滞納処分無効確認請求事件",
     "court": "大阪地方裁判所",
     "date": "令和４年３月２日",
-    "result": "棄却"
+    "date_iso": "2022-03-02",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13680",
     "title": "法人税更正処分等取消請求事件",
     "court": "",
     "date": "令和４年３月２日",
-    "result": "取消"
+    "date_iso": "2022-03-02",
+    "result": "取消",
+    "topics": [
+      "CFC",
+      "移転価格"
+    ],
+    "laws": [
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "軽課税国",
+      "特定外国子会社",
+      "所在地国基準",
+      "措置法６６条の６",
+      "実体基準",
+      "管理支配基準",
+      "外国子会社合算税制",
+      "適用除外要件",
+      "非関連者基準",
+      "国外関連者"
+    ]
   },
   {
     "number": "13681",
     "title": "相続税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年３月３日",
-    "result": "取消"
+    "date_iso": "2022-03-03",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13682",
     "title": "同附帯控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年３月１０日",
-    "result": "取消"
+    "date_iso": "2022-03-10",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [
+      "法人税法22条",
+      "租税特別措置法66条の4"
+    ],
+    "keywords": [
+      "国外関連取引",
+      "比較対象取引",
+      "移転価格",
+      "利益分割法",
+      "算定方法",
+      "措置法６６条の４",
+      "独立企業間価格",
+      "国外関連者",
+      "残余利益分割法"
+    ]
   },
   {
     "number": "13683",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年３月１０日",
-    "result": "取消"
+    "date_iso": "2022-03-10",
+    "result": "取消",
+    "topics": [
+      "CFC",
+      "移転価格"
+    ],
+    "laws": [
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "軽課税国",
+      "特定外国子会社",
+      "措置法６６条の６",
+      "適用除外要件",
+      "算定方法"
+    ]
   },
   {
     "number": "13684",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年３月１０日",
-    "result": "取消"
+    "date_iso": "2022-03-10",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "軽課税国",
+      "特定外国子会社",
+      "措置法６６条の６",
+      "適用除外要件",
+      "外国子会社合算税制"
+    ]
   },
   {
     "number": "13685",
     "title": "税賦課決定処分取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年３月１０日",
-    "result": "取消"
+    "date_iso": "2022-03-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13686",
     "title": "誤認による不当課税取消請求事件",
     "court": "高知地方裁判所",
     "date": "令和４年３月１５日",
-    "result": "取消"
+    "date_iso": "2022-03-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13687",
     "title": "消費税等更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年３月１５日",
-    "result": "取消"
+    "date_iso": "2022-03-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13688",
     "title": "相続税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年３月１５日",
-    "result": "取消"
+    "date_iso": "2022-03-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13689",
     "title": "更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年３月２２日",
-    "result": "取消"
+    "date_iso": "2022-03-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13690",
     "title": "裁決取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年３月２３日",
-    "result": "取消"
+    "date_iso": "2022-03-23",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13691",
     "title": "相続税の更正処分及び過少申告加算税の賦課決定処分取消請求控訴事件",
     "court": "仙台高等裁判所",
     "date": "令和４年３月２３日",
-    "result": "取消"
+    "date_iso": "2022-03-23",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13692",
     "title": "所得税及び復興特別所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年３月２４日",
-    "result": "取消"
+    "date_iso": "2022-03-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13693",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年３月２５日",
-    "result": "取消"
+    "date_iso": "2022-03-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13694",
     "title": "更正をすべき理由がない旨の通知処分取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年３月２５日",
-    "result": "取消"
+    "date_iso": "2022-03-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13695",
     "title": "所得税に係る重加算税の賦課決定処分取消請求控訴事件",
     "court": "福岡高等裁判所",
     "date": "令和４年３月２９日",
-    "result": "取消"
+    "date_iso": "2022-03-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13696",
     "title": "法人税及び地方法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年３月３０日",
-    "result": "取消"
+    "date_iso": "2022-03-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13697",
     "title": "更正処分取消等請求事件",
     "court": "水戸地方裁判所",
     "date": "令和４年４月８日",
-    "result": "取消"
+    "date_iso": "2022-04-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13698",
     "title": "消費税及び地方消費税の更正並びに加算税の賦課決定処分の取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年４月１２日",
-    "result": "取消"
+    "date_iso": "2022-04-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13699",
     "title": "損害賠償等請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年４月１２日",
-    "result": "棄却"
+    "date_iso": "2022-04-12",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13700",
     "title": "消費税更正処分取消等請求控訴事件",
     "court": "福岡高等裁判所",
     "date": "令和４年４月１３日",
-    "result": "取消"
+    "date_iso": "2022-04-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13701",
     "title": "相続税更正処分等取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和４年４月１４日",
-    "result": "取消"
+    "date_iso": "2022-04-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13702",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年４月１４日",
-    "result": "取消"
+    "date_iso": "2022-04-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13703",
     "title": "消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年４月１５日",
-    "result": "取消"
+    "date_iso": "2022-04-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13704",
     "title": "相続税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年４月１９日",
-    "result": "取消"
+    "date_iso": "2022-04-19",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法132条"
+    ],
+    "keywords": []
   },
   {
     "number": "13705",
     "title": "相続税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年４月１９日",
-    "result": "取消"
+    "date_iso": "2022-04-19",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13706",
     "title": "独立当事者参加控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年４月２０日",
-    "result": "取消"
+    "date_iso": "2022-04-20",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13707",
     "title": "法人税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年４月２１日",
-    "result": "取消"
+    "date_iso": "2022-04-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法132条"
+    ],
+    "keywords": []
   },
   {
     "number": "13708",
     "title": "取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年４月２１日",
-    "result": "取消"
+    "date_iso": "2022-04-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13709",
     "title": "所得税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年４月２６日",
-    "result": "取消"
+    "date_iso": "2022-04-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13710",
     "title": "法人税更正処分取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年４月２８日",
-    "result": "取消"
+    "date_iso": "2022-04-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13711",
     "title": "処分取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和４年５月１２日",
-    "result": "取消"
+    "date_iso": "2022-05-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13712",
     "title": "所得税決定処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年５月１２日",
-    "result": "取消"
+    "date_iso": "2022-05-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13713",
     "title": "重加算税賦課処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年５月１３日",
-    "result": "取消"
+    "date_iso": "2022-05-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13714",
     "title": "相続税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年５月１７日",
-    "result": "取消"
+    "date_iso": "2022-05-17",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13715",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年５月１８日",
-    "result": "取消"
+    "date_iso": "2022-05-18",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13716",
     "title": "消費税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年５月１８日",
-    "result": "取消"
+    "date_iso": "2022-05-18",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13717",
     "title": "不当利得返還等請求事件",
     "court": "水戸地方裁判所",
     "date": "令和４年５月２６日",
-    "result": "棄却"
+    "date_iso": "2022-05-26",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13718",
     "title": "所得税の更正及び過少申告加算税賦課決定の取消請求控訴事件",
     "court": "名古屋高等裁判所",
     "date": "令和４年５月２６日",
-    "result": "棄却"
+    "date_iso": "2022-05-26",
+    "result": "棄却",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13719",
     "title": "相続税の更正をすべき理由がない旨の通知処分取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和４年５月２６日",
-    "result": "棄却"
+    "date_iso": "2022-05-26",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13720",
     "title": "金返還等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年５月２６日",
-    "result": "棄却"
+    "date_iso": "2022-05-26",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13721",
     "title": "所得税決定等取消請求上告事件",
     "court": "最高裁判所",
     "date": "令和４年５月２７日",
-    "result": "取消"
+    "date_iso": "2022-05-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13722",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年５月３１日",
-    "result": "取消"
+    "date_iso": "2022-05-31",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13723",
     "title": "消費税の還付申告についての処分取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和４年５月３１日",
-    "result": "棄却"
+    "date_iso": "2022-05-31",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13724",
     "title": "訴えの追加的併合申立事件",
     "court": "名古屋地方裁判所",
     "date": "令和４年６月２日",
-    "result": "棄却"
+    "date_iso": "2022-06-02",
+    "result": "棄却",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13725",
     "title": "法人税および消費税等更正処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年６月２日",
-    "result": "取消"
+    "date_iso": "2022-06-02",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13726",
     "title": "消費税及び地方消費税更正処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年６月７日",
-    "result": "取消"
+    "date_iso": "2022-06-07",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13727",
     "title": "過少申告加算税取消請求事件",
     "court": "高松地方裁判所",
     "date": "令和４年６月９日",
-    "result": "取消"
+    "date_iso": "2022-06-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13728",
     "title": "消費税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年６月１０日",
-    "result": "取消"
+    "date_iso": "2022-06-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13729",
     "title": "消費税決定処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年６月２１日",
-    "result": "取消"
+    "date_iso": "2022-06-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13730",
     "title": "所得税等の納税告知処分等取消請求事件",
     "court": "名古屋地方裁判所",
     "date": "令和４年６月３０日",
-    "result": "取消"
+    "date_iso": "2022-06-30",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13731",
     "title": "処分取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和４年６月３０日",
-    "result": "取消"
+    "date_iso": "2022-06-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13732",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年７月１４日",
-    "result": "取消"
+    "date_iso": "2022-07-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13733",
     "title": "消費税等更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年７月１５日",
-    "result": "取消"
+    "date_iso": "2022-07-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13734",
     "title": "消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年７月１５日",
-    "result": "取消"
+    "date_iso": "2022-07-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13735",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和４年７月２０日",
-    "result": "取消"
+    "date_iso": "2022-07-20",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13736",
     "title": "所得税更正請求棄却処分取消請求事件",
     "court": "津地方裁判所",
     "date": "令和４年７月２１日",
-    "result": "棄却"
+    "date_iso": "2022-07-21",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13737",
     "title": "損害賠償請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年７月２２日",
-    "result": "棄却"
+    "date_iso": "2022-07-22",
+    "result": "棄却",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13738",
     "title": "申告加算税賦課決定処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年７月２６日",
-    "result": "取消"
+    "date_iso": "2022-07-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13739",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年７月２７日",
-    "result": "取消"
+    "date_iso": "2022-07-27",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [],
+    "keywords": [
+      "軽課税国",
+      "特定外国子会社",
+      "所在地国基準",
+      "実体基準",
+      "適用除外要件",
+      "非関連者基準"
+    ]
   },
   {
     "number": "13740",
     "title": "所得税等決定処分取消請求控訴事件",
     "court": "広島高等裁判所",
     "date": "令和４年７月２８日",
-    "result": "取消"
+    "date_iso": "2022-07-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13741",
     "title": "法人税更正請求に対する更正すべき理由がない旨の通知処分取消等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年７月２８日",
-    "result": "取消"
+    "date_iso": "2022-07-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13742",
     "title": "還付手続実施請求控訴事件",
     "court": "名古屋高等裁判所",
     "date": "令和４年７月２８日",
-    "result": "棄却"
+    "date_iso": "2022-07-28",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13743",
     "title": "違憲な裁決の無効確認請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和４年８月３日",
-    "result": "棄却"
+    "date_iso": "2022-08-03",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13744",
     "title": "法人税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年８月８日",
-    "result": "取消"
+    "date_iso": "2022-08-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13745",
     "title": "誤認による不当課税取消請求控訴事件",
     "court": "高松高等裁判所",
     "date": "令和４年８月１０日",
-    "result": "取消"
+    "date_iso": "2022-08-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13746",
     "title": "国家賠償等請求事件",
     "court": "福岡地方裁判所",
     "date": "令和４年８月２５日",
-    "result": "棄却"
+    "date_iso": "2022-08-25",
+    "result": "棄却",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13747",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年８月２５日",
-    "result": "取消"
+    "date_iso": "2022-08-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13748",
     "title": "所得税納税告知処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年８月２６日",
-    "result": "取消"
+    "date_iso": "2022-08-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13749",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年８月３１日",
-    "result": "取消"
+    "date_iso": "2022-08-31",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13750",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年９月１日",
-    "result": "取消"
+    "date_iso": "2022-09-01",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13751",
     "title": "相続税更正処分無効確認等請求事件",
     "court": "大阪地方裁判所",
     "date": "令和４年９月８日",
-    "result": "棄却"
+    "date_iso": "2022-09-08",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13752",
     "title": "修正申告無効確認等請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年９月９日",
-    "result": "棄却"
+    "date_iso": "2022-09-09",
+    "result": "棄却",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13753",
     "title": "法人税の更正処分取消等請求事件",
     "court": "高松地方裁判所",
     "date": "令和４年９月１３日",
-    "result": "取消"
+    "date_iso": "2022-09-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13754",
     "title": "更正すべき理由がない旨の通知処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年９月１４日",
-    "result": "取消"
+    "date_iso": "2022-09-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13755",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年９月１４日",
-    "result": "取消"
+    "date_iso": "2022-09-14",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "租税特別措置法68条の90"
+    ],
+    "keywords": [
+      "特定外国子会社",
+      "適用除外要件",
+      "外国子会社合算税制",
+      "非関連者基準",
+      "措置法６８条の９０"
+    ]
   },
   {
     "number": "13756",
     "title": "源泉所得税納税告知処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年９月１４日",
-    "result": "取消"
+    "date_iso": "2022-09-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13757",
     "title": "消費税更正処分取消等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年９月２１日",
-    "result": "取消"
+    "date_iso": "2022-09-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13758",
     "title": "相続税決定処分取消等請求事件",
     "court": "大阪地方裁判所",
     "date": "令和４年９月２２日",
-    "result": "取消"
+    "date_iso": "2022-09-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13759",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年９月２８日",
-    "result": "取消"
+    "date_iso": "2022-09-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13760",
     "title": "相続税更正処分取消等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年９月２９日",
-    "result": "取消"
+    "date_iso": "2022-09-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13761",
     "title": "所得税の更正及び過少申告加算税賦課決定の取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１０月６日",
-    "result": "取消"
+    "date_iso": "2022-10-06",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13762",
     "title": "年分過少申告加算税の取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年１０月７日",
-    "result": "取消"
+    "date_iso": "2022-10-07",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13763",
     "title": "消費税及び地方消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年１０月２６日",
-    "result": "取消"
+    "date_iso": "2022-10-26",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13764",
     "title": "消費税及び地方消費税の更正並びに加算税の賦課決定処分の取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１０月２６日",
-    "result": "取消"
+    "date_iso": "2022-10-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13765",
     "title": "所得税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１０月２７日",
-    "result": "取消"
+    "date_iso": "2022-10-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13766",
     "title": "消費税の還付申告についての処分取消請求上告事件",
     "court": "最高裁判所",
     "date": "令和４年１０月２８日",
-    "result": "取消"
+    "date_iso": "2022-10-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13767",
     "title": "所得税通知処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１０月３１日",
-    "result": "取消"
+    "date_iso": "2022-10-31",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13768",
     "title": "更正請求不許可処分取消請求事件",
     "court": "静岡地方裁判所",
     "date": "令和４年１１月１０日",
-    "result": "取消"
+    "date_iso": "2022-11-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13769",
     "title": "修正申告の取消等請求事件",
     "court": "千葉地方裁判所",
     "date": "令和４年１１月１１日",
-    "result": "取消"
+    "date_iso": "2022-11-11",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13770",
     "title": "法人税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１１月１１日",
-    "result": "取消"
+    "date_iso": "2022-11-11",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13771",
     "title": "損害賠償請求控訴事件",
     "court": "名古屋高等裁判所",
     "date": "令和４年１１月１５日",
-    "result": "棄却"
+    "date_iso": "2022-11-15",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13772",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１１月１７日",
-    "result": "取消"
+    "date_iso": "2022-11-17",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [],
+    "keywords": [
+      "特定外国子会社",
+      "所在地国基準",
+      "管理支配基準",
+      "適用除外要件",
+      "外国子会社合算税制"
+    ]
   },
   {
     "number": "13773",
     "title": "相続税更正処分等取消請求事件",
     "court": "千葉地方裁判所",
     "date": "令和４年１１月１８日",
-    "result": "取消"
+    "date_iso": "2022-11-18",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13774",
     "title": "法人税額等の更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年１１月１８日",
-    "result": "取消"
+    "date_iso": "2022-11-18",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13775",
     "title": "相続税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１１月２４日",
-    "result": "取消"
+    "date_iso": "2022-11-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13776",
     "title": "損害賠償等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１１月２９日",
-    "result": "棄却"
+    "date_iso": "2022-11-29",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13777",
     "title": "各所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１１月３０日",
-    "result": "取消"
+    "date_iso": "2022-11-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13778",
     "title": "所得税更正処分取消等請求事件",
     "court": "大阪地方裁判所",
     "date": "令和４年１１月３０日",
-    "result": "取消"
+    "date_iso": "2022-11-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13779",
     "title": "相続税の無申告加算税の賦課決定処分及び延滞税取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１１月３０日",
-    "result": "取消"
+    "date_iso": "2022-11-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13780",
     "title": "法人税及び地方法人税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１２月１日",
-    "result": "取消"
+    "date_iso": "2022-12-01",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13781",
     "title": "相続税更正処分等取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和４年１２月２日",
-    "result": "取消"
+    "date_iso": "2022-12-02",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13782",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１２月７日",
-    "result": "取消"
+    "date_iso": "2022-12-07",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13783",
     "title": "更正処分取消等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１２月７日",
-    "result": "取消"
+    "date_iso": "2022-12-07",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13784",
     "title": "消費税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１２月８日",
-    "result": "取消"
+    "date_iso": "2022-12-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13785",
     "title": "所得税及び復興特別所得税の各更正処分並びに過少申告加算税の各賦課決定処分の取消請求事件",
     "court": "長野地方裁判所",
     "date": "令和４年１２月９日",
-    "result": "取消"
+    "date_iso": "2022-12-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13786",
     "title": "法人税および消費税等更正処分取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１２月９日",
-    "result": "取消"
+    "date_iso": "2022-12-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13787",
     "title": "更正をすべき理由がない旨の通知処分取消請求事件",
     "court": "新潟地方裁判所",
     "date": "令和４年１２月１４日",
-    "result": "取消"
+    "date_iso": "2022-12-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13788",
     "title": "重加算税賦課処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１２月１４日",
-    "result": "取消"
+    "date_iso": "2022-12-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13789",
     "title": "法人税青色申告承認取消処分取消請求事件",
     "court": "福岡地方裁判所",
     "date": "令和４年１２月１４日",
-    "result": "取消"
+    "date_iso": "2022-12-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13790",
     "title": "還付手続実施請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１２月１４日",
-    "result": "棄却"
+    "date_iso": "2022-12-14",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13791",
     "title": "過少申告加算税取消請求控訴事件",
     "court": "高松高等裁判所",
     "date": "令和４年１２月１５日",
-    "result": "取消"
+    "date_iso": "2022-12-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13792",
     "title": "課税取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１２月１６日",
-    "result": "取消"
+    "date_iso": "2022-12-16",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13793",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和４年１２月２１日",
-    "result": "取消"
+    "date_iso": "2022-12-21",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13794",
     "title": "法人税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和４年１２月２２日",
-    "result": "取消"
+    "date_iso": "2022-12-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13795",
     "title": "所得税更正処分取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和４年１２月２２日",
-    "result": "取消"
+    "date_iso": "2022-12-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13796",
     "title": "所得税等決定処分取消請求控訴事件",
     "court": "広島高等裁判所",
     "date": "令和４年１２月２２日",
-    "result": "取消"
+    "date_iso": "2022-12-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13797",
     "title": "法人税更正請求に対する更正すべき理由がない旨の通知処分取消等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１２月２２日",
-    "result": "取消"
+    "date_iso": "2022-12-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13798",
     "title": "違憲な裁決の無効確認請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和４年１２月２３日",
-    "result": "不受理"
+    "date_iso": "2022-12-23",
+    "result": "不受理",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13799",
     "title": "所得税更正処分等取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和５年１月１１日",
-    "result": "取消"
+    "date_iso": "2023-01-11",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13800",
     "title": "所得税等決定処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１月１７日",
-    "result": "取消"
+    "date_iso": "2023-01-17",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13801",
     "title": "不当利得返還等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１月１８日",
-    "result": "棄却"
+    "date_iso": "2023-01-18",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13802",
     "title": "更正すべき理由がない旨の通知処分等取消請求事件",
     "court": "津地方裁判所",
     "date": "令和５年１月１９日",
-    "result": "取消"
+    "date_iso": "2023-01-19",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13803",
     "title": "相続税の更正すべき理由がない旨の通知処分取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年１月１９日",
-    "result": "取消"
+    "date_iso": "2023-01-19",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13804",
     "title": "所得税課税処分取消請求事件",
     "court": "那覇地方裁判所",
     "date": "令和５年１月２４日",
-    "result": "取消"
+    "date_iso": "2023-01-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13805",
     "title": "消費税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１月２５日",
-    "result": "取消"
+    "date_iso": "2023-01-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13806",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１月２５日",
-    "result": "取消"
+    "date_iso": "2023-01-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13807",
     "title": "損害賠償請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１月２５日",
-    "result": "棄却"
+    "date_iso": "2023-01-25",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13808",
     "title": "相続税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１月２６日",
-    "result": "取消"
+    "date_iso": "2023-01-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13809",
     "title": "更正請求却下処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１月２７日",
-    "result": "却下"
+    "date_iso": "2023-01-27",
+    "result": "却下",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13810",
     "title": "法人税更正処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１月２７日",
-    "result": "取消"
+    "date_iso": "2023-01-27",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "軽課税国",
+      "特定外国子会社",
+      "措置法６６条の６",
+      "適用除外要件",
+      "外国子会社合算税制"
+    ]
   },
   {
     "number": "13811",
     "title": "所得税等決定処分取消請求上告事件",
     "court": "最高裁判所",
     "date": "令和５年１月２７日",
-    "result": "取消"
+    "date_iso": "2023-01-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13812",
     "title": "損害賠償請求事件",
     "court": "大阪地方裁判所",
     "date": "令和５年１月３０日",
-    "result": "棄却"
+    "date_iso": "2023-01-30",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13813",
     "title": "所得税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年２月８日",
-    "result": "取消"
+    "date_iso": "2023-02-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13814",
     "title": "更正処分取消請求事件",
     "court": "奈良地方裁判所",
     "date": "令和５年２月１４日",
-    "result": "取消"
+    "date_iso": "2023-02-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13815",
     "title": "相続税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年２月１６日",
-    "result": "取消"
+    "date_iso": "2023-02-16",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13816",
     "title": "返還請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年２月１６日",
-    "result": "認容"
+    "date_iso": "2023-02-16",
+    "result": "認容",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13817",
     "title": "所得税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年２月１６日",
-    "result": "取消"
+    "date_iso": "2023-02-16",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13818",
     "title": "法人税等更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年２月１７日",
-    "result": "取消"
+    "date_iso": "2023-02-17",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13819",
     "title": "相続税更正処分の無効確認請求事件",
     "court": "神戸地方裁判所",
     "date": "令和５年２月２１日",
-    "result": "棄却"
+    "date_iso": "2023-02-21",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13820",
     "title": "更正をすべき理由がない旨の通知処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年２月２１日",
-    "result": "取消"
+    "date_iso": "2023-02-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13821",
     "title": "更正請求の理由なし通知の取消請求事件",
     "court": "新潟地方裁判所",
     "date": "令和５年２月２７日",
-    "result": "取消"
+    "date_iso": "2023-02-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13822",
     "title": "所得税決定処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月２日",
-    "result": "取消"
+    "date_iso": "2023-03-02",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13823",
     "title": "1",
     "court": "最高裁判所",
     "date": "令和５年３月６日",
-    "result": "取消"
+    "date_iso": "2023-03-06",
+    "result": "取消",
+    "topics": [
+      "CFC",
+      "移転価格"
+    ],
+    "laws": [
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "租税特別措置法６６条の６",
+      "措置法６６条の６",
+      "算定方法",
+      "外国子会社合算税制"
+    ]
   },
   {
     "number": "13824",
     "title": "消費税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年３月６日",
-    "result": "取消"
+    "date_iso": "2023-03-06",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13825",
     "title": "印紙税過怠税賦課処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月８日",
-    "result": "取消"
+    "date_iso": "2023-03-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13826",
     "title": "課税処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月８日",
-    "result": "取消"
+    "date_iso": "2023-03-08",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13827",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月９日",
-    "result": "取消"
+    "date_iso": "2023-03-09",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13828",
     "title": "消費税及び地方消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月９日",
-    "result": "取消"
+    "date_iso": "2023-03-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13829",
     "title": "所得税更正処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月１４日",
-    "result": "取消"
+    "date_iso": "2023-03-14",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13830",
     "title": "所得税更正処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月１４日",
-    "result": "取消"
+    "date_iso": "2023-03-14",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [],
+    "keywords": [
+      "特定外国子会社",
+      "外国子会社合算税制"
+    ]
   },
   {
     "number": "13831",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月１６日",
-    "result": "取消"
+    "date_iso": "2023-03-16",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13832",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月１６日",
-    "result": "取消"
+    "date_iso": "2023-03-16",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "法人税法22条",
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "軽課税国",
+      "特定外国子会社",
+      "措置法６６条の６",
+      "適用除外要件",
+      "外国子会社合算税制",
+      "非関連者基準"
+    ]
   },
   {
     "number": "13833",
     "title": "相続税決定処分取消等請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和５年３月１６日",
-    "result": "取消"
+    "date_iso": "2023-03-16",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13835",
     "title": "再調査決定取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月２２日",
-    "result": "取消"
+    "date_iso": "2023-03-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13836",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月２３日",
-    "result": "取消"
+    "date_iso": "2023-03-23",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13837",
     "title": "所得税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年３月２４日",
-    "result": "取消"
+    "date_iso": "2023-03-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13838",
     "title": "所得税通知処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年３月２４日",
-    "result": "取消"
+    "date_iso": "2023-03-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13839",
     "title": "税務訴訟資料 第２７３号（順号１３８３９） 神戸地方裁判所 令和●●年（○○）第●●号 取消請求事件 国側当事者・国（明石税務署長） 令和５年３月２８日却下・棄却・控訴 判 決",
     "court": "神戸地方裁判所",
     "date": "令和５年３月２８日",
-    "result": "取消"
+    "date_iso": "2023-03-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13840",
     "title": "法人税更正請求に対する更正すべき理由がない旨の通知処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年３月３０日",
-    "result": "取消"
+    "date_iso": "2023-03-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13841",
     "title": "課税処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年４月１２日",
-    "result": "取消"
+    "date_iso": "2023-04-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13842",
     "title": "修正申告無効確認等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年４月１９日",
-    "result": "棄却"
+    "date_iso": "2023-04-19",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13843",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年４月１９日",
-    "result": "取消"
+    "date_iso": "2023-04-19",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13844",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年４月２１日",
-    "result": "取消"
+    "date_iso": "2023-04-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13845",
     "title": "源泉所得税納税告知処分取消等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年４月２６日",
-    "result": "取消"
+    "date_iso": "2023-04-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13846",
     "title": "損害賠償請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年４月２７日",
-    "result": "棄却"
+    "date_iso": "2023-04-27",
+    "result": "棄却",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13847",
     "title": "法人税額等の更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年４月２７日",
-    "result": "取消"
+    "date_iso": "2023-04-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13848",
     "title": "所得税等決定処分取消請求上告事件",
     "court": "最高裁判所",
     "date": "令和５年５月１０日",
-    "result": "取消"
+    "date_iso": "2023-05-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13849",
     "title": "過少申告加算税取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年５月１０日",
-    "result": "取消"
+    "date_iso": "2023-05-10",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13850",
     "title": "更正しないとの通知処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年５月１２日",
-    "result": "取消"
+    "date_iso": "2023-05-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13851",
     "title": "償等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年５月１９日",
-    "result": "棄却"
+    "date_iso": "2023-05-19",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13852",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年５月２４日",
-    "result": "取消"
+    "date_iso": "2023-05-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13853",
     "title": "消費税及び地方消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年５月２５日",
-    "result": "取消"
+    "date_iso": "2023-05-25",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13854",
     "title": "相続税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年５月２５日",
-    "result": "取消"
+    "date_iso": "2023-05-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13855",
     "title": "法人税賦課決定処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年５月３０日",
-    "result": "取消"
+    "date_iso": "2023-05-30",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": [
+      "独立企業間価格",
+      "移転価格"
+    ]
   },
   {
     "number": "13856",
     "title": "更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年６月１日",
-    "result": "取消"
+    "date_iso": "2023-06-01",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13857",
     "title": "相続税更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年６月７日",
-    "result": "取消"
+    "date_iso": "2023-06-07",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13858",
     "title": "所得税等更正処分の一部取消請求事件",
     "court": "熊本地方裁判所",
     "date": "令和５年６月９日",
-    "result": "取消"
+    "date_iso": "2023-06-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13859",
     "title": "所得税更正処分等取消請求事件",
     "court": "名古屋地方裁判所",
     "date": "令和５年６月２２日",
-    "result": "取消"
+    "date_iso": "2023-06-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13860",
     "title": "課税処分の取消請求事件",
     "court": "大阪地方裁判所",
     "date": "令和５年６月２２日",
-    "result": "取消"
+    "date_iso": "2023-06-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13861",
     "title": "相続税更正処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年６月２９日",
-    "result": "取消"
+    "date_iso": "2023-06-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13862",
     "title": "法人税青色申告承認取消処分取消請求控訴事件",
     "court": "福岡高等裁判所",
     "date": "令和５年６月３０日",
-    "result": "取消"
+    "date_iso": "2023-06-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13863",
     "title": "得返還等請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年７月７日",
-    "result": "棄却"
+    "date_iso": "2023-07-07",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13864",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年７月２０日",
-    "result": "取消"
+    "date_iso": "2023-07-20",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13865",
     "title": "法人税更正請求に対する更正すべき理由がない旨の通知処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年７月２０日",
-    "result": "取消"
+    "date_iso": "2023-07-20",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13866",
     "title": "所得税更正処分取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和５年７月２６日",
-    "result": "取消"
+    "date_iso": "2023-07-26",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13867",
     "title": "法人事業に係る処分取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和５年７月２７日",
-    "result": "取消"
+    "date_iso": "2023-07-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13868",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年７月２８日",
-    "result": "取消"
+    "date_iso": "2023-07-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13869",
     "title": "法人税更正処分等取消請求事件",
     "court": "広島地方裁判所",
     "date": "令和５年７月３１日",
-    "result": "取消"
+    "date_iso": "2023-07-31",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13870",
     "title": "所得税等決定処分取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年８月１日",
-    "result": "取消"
+    "date_iso": "2023-08-01",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13871",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年８月２日",
-    "result": "取消"
+    "date_iso": "2023-08-02",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [],
+    "keywords": [
+      "算定方法"
+    ]
   },
   {
     "number": "13872",
     "title": "所得税及び復興特別所得税の各更正処分並びに過少申告加算税の各賦課決定処分の取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年８月３日",
-    "result": "取消"
+    "date_iso": "2023-08-03",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13873",
     "title": "消費税及び地方消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年８月２２日",
-    "result": "取消"
+    "date_iso": "2023-08-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13874",
     "title": "消費税更正処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年８月２９日",
-    "result": "取消"
+    "date_iso": "2023-08-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13875",
     "title": "消費税税額等更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年８月２９日",
-    "result": "取消"
+    "date_iso": "2023-08-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13876",
     "title": "更正をすべき理由がない旨の通知処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年８月３０日",
-    "result": "取消"
+    "date_iso": "2023-08-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13877",
     "title": "所得税更正処分取消等請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和５年８月３１日",
-    "result": "取消"
+    "date_iso": "2023-08-31",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13878",
     "title": "相続税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年８月３１日",
-    "result": "取消"
+    "date_iso": "2023-08-31",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13879",
     "title": "更正すべき理由がない旨の通知処分等取消請求控訴事件",
     "court": "名古屋高等裁判所",
     "date": "令和５年９月６日",
-    "result": "取消"
+    "date_iso": "2023-09-06",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13880",
     "title": "消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年９月８日",
-    "result": "取消"
+    "date_iso": "2023-09-08",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13881",
     "title": "相続税更正処分の無効の確認請求事件",
     "court": "神戸地方裁判所",
     "date": "令和５年９月１２日",
-    "result": "棄却"
+    "date_iso": "2023-09-12",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13882",
     "title": "賦課税決定と更正処分取消等請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年９月１２日",
-    "result": "取消"
+    "date_iso": "2023-09-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13883",
     "title": "法人税更正処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年９月１３日",
-    "result": "取消"
+    "date_iso": "2023-09-13",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "租税特別措置法６６条の６",
+      "措置法６６条の６",
+      "特定外国子会社",
+      "外国子会社合算税制"
+    ]
   },
   {
     "number": "13884",
     "title": "更正請求却下処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年９月１４日",
-    "result": "却下"
+    "date_iso": "2023-09-14",
+    "result": "却下",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13885",
     "title": "消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年９月１９日",
-    "result": "取消"
+    "date_iso": "2023-09-19",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13886",
     "title": "法人税額等の更正及び過少申告加算税賦課決定処分取消等請求事件",
     "court": "静岡地方裁判所",
     "date": "令和５年９月２１日",
-    "result": "取消"
+    "date_iso": "2023-09-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13887",
     "title": "更正処分取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和５年９月２１日",
-    "result": "取消"
+    "date_iso": "2023-09-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13888",
     "title": "法人税更正請求に対する更正すべき理由がない旨の通知処分取消等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年３月３０日",
-    "result": "取消"
+    "date_iso": "2023-03-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13889",
     "title": "所得税課税処分取消請求控訴事件",
     "court": "福岡高等裁判所",
     "date": "令和５年９月２８日",
-    "result": "取消"
+    "date_iso": "2023-09-28",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13890",
     "title": "消費税及び地方消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年９月２９日",
-    "result": "取消"
+    "date_iso": "2023-09-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13892",
     "title": "課税処分取消請求事件",
     "court": "水戸地方裁判所",
     "date": "令和５年１０月１２日",
-    "result": "取消"
+    "date_iso": "2023-10-12",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13893",
     "title": "印紙税過怠税賦課処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１０月１８日",
-    "result": "取消"
+    "date_iso": "2023-10-18",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13894",
     "title": "所得税更正処分等取消請求事件",
     "court": "京都地方裁判所",
     "date": "令和５年１０月２０日",
-    "result": "取消"
+    "date_iso": "2023-10-20",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13895",
     "title": "更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年１０月２５日",
-    "result": "取消"
+    "date_iso": "2023-10-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13896",
     "title": "所得税等決定処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１０月２７日",
-    "result": "取消"
+    "date_iso": "2023-10-27",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13897",
     "title": "国家賠償請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１０月２７日",
-    "result": "棄却"
+    "date_iso": "2023-10-27",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13898",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１０月３１日",
-    "result": "取消"
+    "date_iso": "2023-10-31",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   },
   {
     "number": "13899",
     "title": "所得税決定処分取消等請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１１月１日",
-    "result": "取消"
+    "date_iso": "2023-11-01",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13900",
     "title": "法人税更正処分等取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年１１月６日",
-    "result": "取消"
+    "date_iso": "2023-11-06",
+    "result": "取消",
+    "topics": [
+      "CFC"
+    ],
+    "laws": [
+      "租税特別措置法66条の6"
+    ],
+    "keywords": [
+      "措置法６６条の６",
+      "特定外国子会社"
+    ]
   },
   {
     "number": "13901",
     "title": "消費税及び地方消費税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１１月９日",
-    "result": "取消"
+    "date_iso": "2023-11-09",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13902",
     "title": "課税処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１１月１５日",
-    "result": "取消"
+    "date_iso": "2023-11-15",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13903",
     "title": "償請求上告提起及び上告受理申立て事件",
     "court": "最高裁判所",
     "date": "令和５年１１月２２日",
-    "result": "棄却"
+    "date_iso": "2023-11-22",
+    "result": "棄却",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13904",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "名古屋高等裁判所",
     "date": "令和５年１１月２４日",
-    "result": "取消"
+    "date_iso": "2023-11-24",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13905",
     "title": "更正請求の理由なし通知の取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１１月２９日",
-    "result": "取消"
+    "date_iso": "2023-11-29",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13906",
     "title": "所得税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１１月３０日",
-    "result": "取消"
+    "date_iso": "2023-11-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13907",
     "title": "取消請求控訴事件",
     "court": "大阪高等裁判所",
     "date": "令和５年１１月３０日",
-    "result": "取消"
+    "date_iso": "2023-11-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13908",
     "title": "所得税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１１月３０日",
-    "result": "取消"
+    "date_iso": "2023-11-30",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13909",
     "title": "相続税決定処分取消等請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年１２月１日",
-    "result": "取消"
+    "date_iso": "2023-12-01",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13910",
     "title": "法人税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１２月７日",
-    "result": "取消"
+    "date_iso": "2023-12-07",
+    "result": "取消",
+    "topics": [
+      "移転価格"
+    ],
+    "laws": [
+      "租税特別措置法66条の4"
+    ],
+    "keywords": [
+      "国外関連取引",
+      "比較対象取引",
+      "移転価格",
+      "利益分割法",
+      "算定方法",
+      "措置法６６条の４",
+      "取引単位営業利益法",
+      "独立企業間価格",
+      "国外関連者",
+      "残余利益分割法"
+    ]
   },
   {
     "number": "13911",
     "title": "法人税額等の更正処分等取消請求上告及び上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年１２月１３日",
-    "result": "取消"
+    "date_iso": "2023-12-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13912",
     "title": "相続税更正処分等取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１２月１３日",
-    "result": "取消"
+    "date_iso": "2023-12-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13913",
     "title": "相続税更正処分取消請求控訴事件",
     "court": "東京高等裁判所",
     "date": "令和５年１２月１３日",
-    "result": "取消"
+    "date_iso": "2023-12-13",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13914",
     "title": "所得税等更正処分の一部取消請求控訴事件",
     "court": "福岡高等裁判所",
     "date": "令和５年１２月２１日",
-    "result": "取消"
+    "date_iso": "2023-12-21",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13915",
     "title": "所得税更正処分取消請求上告受理事件",
     "court": "最高裁判所",
     "date": "令和５年１２月２２日",
-    "result": "取消"
+    "date_iso": "2023-12-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13916",
     "title": "消費税及び地方消費税更正処分等取消請求事件",
     "court": "東京地方裁判所",
     "date": "令和５年１２月２２日",
-    "result": "取消"
+    "date_iso": "2023-12-22",
+    "result": "取消",
+    "topics": [],
+    "laws": [],
+    "keywords": []
   },
   {
     "number": "13917",
     "title": "更正処分取消請求事件",
     "court": "仙台地方裁判所",
     "date": "令和５年１２月２５日",
-    "result": "取消"
+    "date_iso": "2023-12-25",
+    "result": "取消",
+    "topics": [],
+    "laws": [
+      "法人税法22条"
+    ],
+    "keywords": []
   }
 ]
