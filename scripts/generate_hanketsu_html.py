@@ -26,6 +26,7 @@ body {
 h1 { font-size: 1.4em; border-bottom: 2px solid #2563eb; padding-bottom: 8px; }
 h2 { font-size: 1.2em; color: #1e40af; margin-top: 1.5em; }
 h3 { font-size: 1.1em; color: #1e3a8a; margin-top: 1.2em; border-left: 4px solid #3b82f6; padding-left: 10px; }
+h4 { font-size: 1em; color: #374151; margin-top: 1em; margin-left: 10px; font-weight: 600; }
 .meta { background: #e0f2fe; padding: 12px; border-radius: 6px; margin: 16px 0; }
 .meta p { margin: 4px 0; }
 section { margin: 24px 0; }
@@ -217,51 +218,165 @@ def parse_hanketsu(text: str, case_number: str) -> dict:
 
 
 def parse_sections(text: str) -> list:
-    """テキストをセクションに分割"""
+    """テキストをセクションに分割（改善版）
+
+    PDFのテキスト抽出では改行が不規則なため、
+    セクションマーカーをテキスト内から検出して分割する
+    """
     sections = []
 
-    # セクション見出しのパターン
-    # 「第１ 請求」「第２ 事案の概要」などの形式
-    pattern = r'^(第[１２３４５６７８９0-9]+)\s+(.+?)$'
+    # 「主文」の位置を見つける（メインコンテンツの開始点）
+    main_match = re.search(r'主\s*文', text)
+    if not main_match:
+        # 主文が見つからない場合は全体を1セクションとして返す
+        return [{'title': '本文', 'level': 1, 'content': [text]}]
 
-    lines = text.split('\n')
-    current_section = {'title': '冒頭', 'content': []}
+    # 主文以降のテキストを処理
+    main_text = text[main_match.start():]
 
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
+    # セクションの位置を収集
+    section_positions = []
 
-        # セクション見出しをチェック
-        match = re.match(pattern, line)
-        if match:
-            # 前のセクションを保存
-            if current_section['content']:
-                sections.append(current_section)
-            current_section = {
-                'title': f"{match.group(1)} {match.group(2)}",
-                'content': []
-            }
-        # 主文、事実及び理由などの見出し
-        elif line in ['主 文', '主文', '事実及び理由', '理 由', '理由', '事 実', '事実']:
-            if current_section['content']:
-                sections.append(current_section)
-            current_section = {
-                'title': line.replace(' ', ''),
-                'content': []
-            }
+    # 主文（常に最初）
+    section_positions.append({
+        'pos': 0,
+        'title': '主文',
+        'level': 1
+    })
+
+    # 事実及び理由（複合語なのでマッチしやすい）
+    for match in re.finditer(r'事実及び理由', main_text):
+        if match.start() > 20:  # 主文セクション内でなければ
+            section_positions.append({
+                'pos': match.start(),
+                'title': '事実及び理由',
+                'level': 1
+            })
+
+    # 第X パターン（スペースの後にタイトルが続く形式）
+    # "第１ 控訴の趣旨" または "事実及び理由第１ 控訴の趣旨" のような形式を検出
+    for match in re.finditer(r'第([１２３４５６７８９0-9一二三四五六七八九十]+)\s+([ぁ-んァ-ン一-龯々]{1,20})', main_text):
+        if match.start() > 10:
+            dai_num = match.group(1)
+            dai_title = match.group(2).strip()
+            section_positions.append({
+                'pos': match.start(),
+                'title': f'第{dai_num} {dai_title}',
+                'level': 2
+            })
+
+    # 位置でソート
+    section_positions.sort(key=lambda x: x['pos'])
+
+    # 重複や近接を除去（50文字以内は同一セクションとみなす）
+    # ただし第Xパターンが連続する場合は別セクションとして扱う
+    filtered_positions = []
+    for sp in section_positions:
+        if not filtered_positions:
+            filtered_positions.append(sp)
         else:
-            current_section['content'].append(line)
+            last = filtered_positions[-1]
+            dist = sp['pos'] - last['pos']
+            # 事実及び理由の直後に第Xが来る場合は、事実及び理由を採用しない
+            if dist < 50 and last['title'] == '事実及び理由' and '第' in sp['title']:
+                filtered_positions[-1] = sp
+            elif dist >= 50:
+                filtered_positions.append(sp)
 
-    # 最後のセクションを保存
-    if current_section['content']:
-        sections.append(current_section)
+    # セクションを構築
+    for i, sp in enumerate(filtered_positions):
+        start = sp['pos']
+        # 次のセクションの開始位置、または終端
+        if i + 1 < len(filtered_positions):
+            end = filtered_positions[i + 1]['pos']
+        else:
+            end = len(main_text)
+
+        content = main_text[start:end]
+
+        # セクションタイトル自体を除去
+        if sp['title'] == '主文':
+            content = re.sub(r'^主\s*文\s*', '', content)
+        elif sp['title'] == '事実及び理由':
+            content = re.sub(r'^事実及び理由\s*', '', content)
+        elif '第' in sp['title']:
+            # 第X + タイトル部分を除去
+            content = re.sub(r'^第[１２３４５６７８９0-9一二三四五六七八九十]+\s+[ぁ-んァ-ン一-龯々]{1,20}\s*', '', content)
+
+        content = content.strip()
+
+        if content:
+            sections.append({
+                'title': sp['title'],
+                'level': sp['level'],
+                'content': [content]
+            })
 
     return sections
 
 
+def split_into_paragraphs(content_lines: list) -> list:
+    """コンテンツを適切な段落に分割"""
+    if not content_lines:
+        return []
+
+    # 全体を結合
+    full_text = ' '.join(content_lines)
+
+    paragraphs = []
+
+    # 番号付き項目で分割するパターン
+    # （１）、（２）または １、２ または (1)、(2)
+    split_pattern = r'(?=（[１２３４５６７８９０一二三四五六七八九十\d]+）|(?<=[。\s])([１２３４５６７８９一二三四五六七八九十])\s|(?<=\s)\(\d+\)\s)'
+
+    # まず大きな区切りで分割
+    parts = re.split(split_pattern, full_text)
+
+    current_para = []
+    for part in parts:
+        if part is None:
+            continue
+        part = part.strip()
+        if not part:
+            continue
+
+        # 番号で始まる場合は新しい段落
+        if re.match(r'^（[１２３４５６７８９０一二三四五六七八九十\d]+）', part):
+            if current_para:
+                paragraphs.append(' '.join(current_para))
+                current_para = []
+            current_para.append(part)
+        elif re.match(r'^[１２３４５６７８９一二三四五六七八九十]\s', part):
+            if current_para:
+                paragraphs.append(' '.join(current_para))
+                current_para = []
+            current_para.append(part)
+        else:
+            current_para.append(part)
+
+    if current_para:
+        paragraphs.append(' '.join(current_para))
+
+    # 段落が1つだけで長すぎる場合、句点で分割を試みる
+    if len(paragraphs) == 1 and len(paragraphs[0]) > 1000:
+        long_text = paragraphs[0]
+        # 文末の句点+スペースで分割（ただし括弧内は除く）
+        sentences = re.split(r'。\s+', long_text)
+        if len(sentences) > 1:
+            paragraphs = []
+            for i, sent in enumerate(sentences):
+                if sent.strip():
+                    # 最後以外は句点を戻す
+                    if i < len(sentences) - 1:
+                        paragraphs.append(sent.strip() + '。')
+                    else:
+                        paragraphs.append(sent.strip())
+
+    return paragraphs
+
+
 def generate_html(case: dict, year: str) -> str:
-    """構造化されたHTMLを生成"""
+    """構造化されたHTMLを生成（改善版）"""
     h = html_module.escape
 
     lines = []
@@ -298,23 +413,21 @@ def generate_html(case: dict, year: str) -> str:
     if case['sections']:
         for section in case['sections']:
             title = section['title']
-            content = section['content']
+            content = section.get('content', [])
+            level = section.get('level', 1)
 
             lines.append('<section>')
-            lines.append(f'<h3>{h(title)}</h3>')
+            # レベルに応じた見出しタグ
+            if level == 1:
+                lines.append(f'<h3>{h(title)}</h3>')
+            else:
+                lines.append(f'<h4>{h(title)}</h4>')
 
-            # 内容を段落に
-            para_text = []
-            for line in content:
-                if line:
-                    para_text.append(line)
-                else:
-                    if para_text:
-                        lines.append(f'<p>{h(" ".join(para_text))}</p>')
-                        para_text = []
-
-            if para_text:
-                lines.append(f'<p>{h(" ".join(para_text))}</p>')
+            # 段落分割を適用
+            paragraphs = split_into_paragraphs(content)
+            for para in paragraphs:
+                if para.strip():
+                    lines.append(f'<p>{h(para)}</p>')
 
             lines.append('</section>')
     else:
