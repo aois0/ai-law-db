@@ -388,18 +388,19 @@ tr:hover { background: #f8fafc; }
 
 def main():
     import sys
+    import argparse
 
-    year = '2023'
-    pdf_dir = f'/home/user/ai-law-db/data/hanketsu/{year}/pdf'
-    output_dir = f'/home/user/ai-law-db/simple/hanketsu/{year}'
-    limit = None
+    parser = argparse.ArgumentParser(description='国税庁判決事例PDFからHTMLを生成')
+    parser.add_argument('--year', default='2023', help='年度（例: 2022, 2023）')
+    parser.add_argument('--pdf-dir', help='PDFディレクトリ（省略時は自動設定）')
+    parser.add_argument('--output-dir', help='出力ディレクトリ（省略時は自動設定）')
+    parser.add_argument('--limit', type=int, help='処理数制限')
+    args = parser.parse_args()
 
-    if len(sys.argv) > 1:
-        try:
-            limit = int(sys.argv[1])
-            print(f"処理数制限: {limit}件")
-        except:
-            pass
+    year = args.year
+    pdf_dir = args.pdf_dir or f'/home/user/ai-law-db/data/hanketsu/{year}/pdf'
+    output_dir = args.output_dir or f'/home/user/ai-law-db/simple/hanketsu/{year}'
+    limit = args.limit
 
     os.makedirs(output_dir, exist_ok=True)
 

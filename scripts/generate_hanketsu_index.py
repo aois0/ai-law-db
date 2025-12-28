@@ -63,7 +63,7 @@ function filterTable() {
 """
 
 
-def generate_index_html(cases: list, year: str) -> str:
+def generate_index_html(cases: list, title: str) -> str:
     h = html_module.escape
 
     lines = []
@@ -72,11 +72,11 @@ def generate_index_html(cases: list, year: str) -> str:
     lines.append('<head>')
     lines.append('<meta charset="UTF-8">')
     lines.append('<meta name="viewport" content="width=device-width, initial-scale=1">')
-    lines.append(f'<title>国税庁判決事例集 {year} - 目次</title>')
+    lines.append(f'<title>{h(title)} - 目次</title>')
     lines.append(f'<style>{CSS}</style>')
     lines.append('</head>')
     lines.append('<body>')
-    lines.append(f'<h1>国税庁判決事例集 {year}</h1>')
+    lines.append(f'<h1>{h(title)}</h1>')
 
     # 統計
     tax_stats = {}
@@ -153,13 +153,20 @@ def generate_index_html(cases: list, year: str) -> str:
 
 
 def main():
-    html_dir = '/home/user/ai-law-db/simple/hanketsu/2023'
-    year = '2023'
+    import argparse
+
+    parser = argparse.ArgumentParser(description='index.htmlを生成')
+    parser.add_argument('--html-dir', default='/home/user/ai-law-db/simple/hanketsu/2023', help='HTMLディレクトリ')
+    parser.add_argument('--title', default='国税庁判決事例集', help='タイトル')
+    args = parser.parse_args()
+
+    html_dir = args.html_dir
+    title = args.title
 
     with open(os.path.join(html_dir, 'index.json'), 'r', encoding='utf-8') as f:
         cases = json.load(f)
 
-    index_html = generate_index_html(cases, year)
+    index_html = generate_index_html(cases, title)
 
     with open(os.path.join(html_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(index_html)

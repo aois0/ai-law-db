@@ -123,20 +123,19 @@ def download_pdf(url: str, output_path: str) -> bool:
 
 def main():
     import sys
+    import argparse
 
-    # デフォルト設定
-    year = '2023'
+    parser = argparse.ArgumentParser(description='国税庁判決事例PDFダウンロード')
+    parser.add_argument('--year', default='2023', help='年度（例: 2022, 2023）')
+    parser.add_argument('--output-dir', help='出力ディレクトリ（省略時は自動設定）')
+    parser.add_argument('--delay', type=float, default=0.5, help='リクエスト間隔（秒）')
+    parser.add_argument('--limit', type=int, help='ダウンロード数制限')
+    args = parser.parse_args()
+
+    year = args.year
     base_url = f'https://www.nta.go.jp/about/organization/ntc/soshoshiryo/kazei/{year}/index.htm'
-    output_dir = f'/home/user/ai-law-db/data/hanketsu/{year}/pdf'
-    limit = None  # None = 全件、数値 = 制限
-
-    # コマンドライン引数
-    if len(sys.argv) > 1:
-        try:
-            limit = int(sys.argv[1])
-            print(f"ダウンロード数制限: {limit}件")
-        except:
-            pass
+    output_dir = args.output_dir or f'/home/user/ai-law-db/data/hanketsu/{year}/pdf'
+    limit = args.limit
 
     # 出力ディレクトリ作成
     os.makedirs(output_dir, exist_ok=True)
@@ -191,7 +190,7 @@ def main():
         print(f"[{i}/{len(cases)}] ダウンロード中: {number}.pdf")
         if download_pdf(pdf_url, output_path):
             success += 1
-            time.sleep(0.5)  # 負荷軽減
+            time.sleep(args.delay)  # 負荷軽減
         else:
             print(f"  失敗: {pdf_url}")
 

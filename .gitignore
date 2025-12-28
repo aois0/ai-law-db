@@ -1,6 +1,9 @@
 # PDFファイル（サイズが大きいため）
 data/hanketsu/*/pdf/
 
+# スキルパッケージ
+*.skill
+
 # 一時ファイル
 *.pyc
 __pycache__/

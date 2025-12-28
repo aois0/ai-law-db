@@ -263,7 +263,13 @@ def update_html_with_metadata(html_path: str, metadata: dict) -> str:
 
 
 def main():
-    html_dir = '/home/user/ai-law-db/simple/hanketsu/2023'
+    import argparse
+
+    parser = argparse.ArgumentParser(description='判決HTMLにメタデータを追加')
+    parser.add_argument('--html-dir', default='/home/user/ai-law-db/simple/hanketsu/2023', help='HTMLディレクトリ')
+    args = parser.parse_args()
+
+    html_dir = args.html_dir
 
     # 既存のindex.jsonを読み込み
     with open(os.path.join(html_dir, 'index.json'), 'r', encoding='utf-8') as f:
