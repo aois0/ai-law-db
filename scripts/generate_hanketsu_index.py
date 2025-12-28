@@ -53,8 +53,8 @@ function filterTable() {
   var rows = document.querySelectorAll('tbody tr');
 
   rows.forEach(function(row) {
-    var taxCell = row.cells[2].textContent;
-    var resultCell = row.cells[5].textContent;
+    var taxCell = row.cells[3].textContent;
+    var resultCell = row.cells[6].textContent;
     var showTax = !taxType || taxCell.includes(taxType);
     var showResult = !result || resultCell === result;
     row.style.display = (showTax && showResult) ? '' : 'none';
@@ -112,7 +112,7 @@ def generate_index_html(cases: list, title: str) -> str:
     # テーブル
     lines.append('<table>')
     lines.append('<thead>')
-    lines.append('<tr><th>番号</th><th>事件名</th><th>税目</th><th>争点</th><th>日付</th><th>結果</th></tr>')
+    lines.append('<tr><th>番号</th><th>事件名</th><th>裁判所</th><th>税目</th><th>争点</th><th>日付</th><th>結果</th></tr>')
     lines.append('</thead>')
     lines.append('<tbody>')
 
@@ -137,9 +137,13 @@ def generate_index_html(cases: list, title: str) -> str:
         if len([i for i in issues if not i.startswith('（')]) > 2:
             issues_text += '...'
 
+        # 裁判所名を短縮
+        court_short = court.replace('裁判所', '').replace('地方', '地').replace('高等', '高')
+
         lines.append('<tr>')
         lines.append(f'<td><a href="{num}.html">{h(num)}</a></td>')
         lines.append(f'<td>{h(title)}</td>')
+        lines.append(f'<td>{h(court_short)}</td>')
         lines.append(f'<td>{tax_html}</td>')
         lines.append(f'<td class="issues">{h(issues_text)}</td>')
         lines.append(f'<td>{h(date)}</td>')
