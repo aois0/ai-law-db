@@ -95,13 +95,14 @@ def clean_text(text: str) -> str:
     # CIDコードを削除（残っている場合）
     text = re.sub(r'\(cid:\d+\)', '', text)
 
+    # ページ番号を削除（行末または行頭の単独数字 - ASCII/全角両方）
+    # パターン: 改行 + 数字のみ + 改行
+    text = re.sub(r'\n\s*\d{1,3}\s*\n', '\n', text)
+    text = re.sub(r'\n\s*\d{1,3}\s*$', '', text)
+
     # pypdfの出力で見られる不要な改行を修正
     # 文の途中での改行を削除（句読点の後以外）
     text = re.sub(r'([^。、）」\n])\n([ぁ-んァ-ン一-龯])', r'\1\2', text)
-
-    # ページ番号（行末の単独数字）を削除
-    text = re.sub(r'\n\d+\n', '\n', text)
-    text = re.sub(r'\n\d+$', '', text)
 
     # テーブルの崩れた出力を修正（連続した空白や記号）
     text = re.sub(r'[o O n N \.]{5,}', ' ', text)
@@ -244,32 +245,38 @@ def parse_sections(text: str) -> list:
         'level': 1
     })
 
-    # 事実及び理由（複合語なのでマッチしやすい）
+    # 事実及び理由（引用符内でないものを検出）
     for match in re.finditer(r'事実及び理由', main_text):
-        if match.start() > 20:  # 主文セクション内でなければ
-            section_positions.append({
-                'pos': match.start(),
-                'title': '事実及び理由',
-                'level': 1
-            })
+        pos = match.start()
+        if pos > 10:  # 主文から10文字以上離れていれば検出
+            # 直前に「がないかチェック（引用内は除外）
+            before = main_text[max(0, pos-10):pos]
+            if '「' not in before:
+                section_positions.append({
+                    'pos': pos,
+                    'title': '事実及び理由',
+                    'level': 1
+                })
 
-    # 第X パターン（スペースの後にタイトルが続く形式）
-    # "第１ 控訴の趣旨" または "事実及び理由第１ 控訴の趣旨" のような形式を検出
+    # 第X パターン（引用符内でないものを検出）
     for match in re.finditer(r'第([１２３４５６７８９0-9一二三四五六七八九十]+)\s+([ぁ-んァ-ン一-龯々]{1,20})', main_text):
-        if match.start() > 10:
-            dai_num = match.group(1)
-            dai_title = match.group(2).strip()
-            section_positions.append({
-                'pos': match.start(),
-                'title': f'第{dai_num} {dai_title}',
-                'level': 2
-            })
+        pos = match.start()
+        if pos > 10:
+            # 直前に「がないかチェック（引用内は除外）
+            before = main_text[max(0, pos-5):pos]
+            if '「' not in before:
+                dai_num = match.group(1)
+                dai_title = match.group(2).strip()
+                section_positions.append({
+                    'pos': pos,
+                    'title': f'第{dai_num} {dai_title}',
+                    'level': 2
+                })
 
     # 位置でソート
     section_positions.sort(key=lambda x: x['pos'])
 
-    # 重複や近接を除去（50文字以内は同一セクションとみなす）
-    # ただし第Xパターンが連続する場合は別セクションとして扱う
+    # 重複や近接を除去（距離25文字以上で追加）
     filtered_positions = []
     for sp in section_positions:
         if not filtered_positions:
@@ -277,10 +284,15 @@ def parse_sections(text: str) -> list:
         else:
             last = filtered_positions[-1]
             dist = sp['pos'] - last['pos']
-            # 事実及び理由の直後に第Xが来る場合は、事実及び理由を採用しない
-            if dist < 50 and last['title'] == '事実及び理由' and '第' in sp['title']:
-                filtered_positions[-1] = sp
-            elif dist >= 50:
+
+            # 25文字以上離れていれば追加（主文内容 + セクション名が入る余裕）
+            if dist >= 25:
+                filtered_positions.append(sp)
+            # 近接しているが、レベルが異なる場合（事実及び理由の直後に第Xなど）
+            elif dist > 0 and last['level'] != sp['level']:
+                filtered_positions.append(sp)
+            # 事実及び理由の直後に第Xが来る場合
+            elif dist > 0 and last['title'] == '事実及び理由' and '第' in sp['title']:
                 filtered_positions.append(sp)
 
     # セクションを構築
@@ -305,7 +317,8 @@ def parse_sections(text: str) -> list:
 
         content = content.strip()
 
-        if content:
+        # 空でないセクションのみ追加（3文字以上）
+        if content and len(content) >= 3:
             sections.append({
                 'title': sp['title'],
                 'level': sp['level'],
@@ -316,63 +329,35 @@ def parse_sections(text: str) -> list:
 
 
 def split_into_paragraphs(content_lines: list) -> list:
-    """コンテンツを適切な段落に分割"""
+    """コンテンツを適切な段落に分割（シンプル版）"""
     if not content_lines:
         return []
 
     # 全体を結合
     full_text = ' '.join(content_lines)
+    full_text = full_text.strip()
+
+    if not full_text:
+        return []
+
+    # 単純に（１）、（２）などの括弧付き番号で分割
+    # lookahead を使って分割位置を決定（番号自体は保持）
+    parts = re.split(r'(?=（[１２３４５６７８９０一二三四五六七八九十\d]+）)', full_text)
 
     paragraphs = []
-
-    # 番号付き項目で分割するパターン
-    # （１）、（２）または １、２ または (1)、(2)
-    split_pattern = r'(?=（[１２３４５６７８９０一二三四五六七八九十\d]+）|(?<=[。\s])([１２３４５６７８９一二三四五六七八九十])\s|(?<=\s)\(\d+\)\s)'
-
-    # まず大きな区切りで分割
-    parts = re.split(split_pattern, full_text)
-
-    current_para = []
     for part in parts:
-        if part is None:
-            continue
         part = part.strip()
-        if not part:
-            continue
+        if part:
+            paragraphs.append(part)
 
-        # 番号で始まる場合は新しい段落
-        if re.match(r'^（[１２３４５６７８９０一二三四五六七八九十\d]+）', part):
-            if current_para:
-                paragraphs.append(' '.join(current_para))
-                current_para = []
-            current_para.append(part)
-        elif re.match(r'^[１２３４５６７８９一二三四五六七八九十]\s', part):
-            if current_para:
-                paragraphs.append(' '.join(current_para))
-                current_para = []
-            current_para.append(part)
-        else:
-            current_para.append(part)
+    # 分割されなかった場合、または段落が1つで長すぎる場合
+    if len(paragraphs) <= 1 and len(full_text) > 2000:
+        # 改行で分割を試みる
+        lines = full_text.split('\n')
+        if len(lines) > 1:
+            paragraphs = [line.strip() for line in lines if line.strip()]
 
-    if current_para:
-        paragraphs.append(' '.join(current_para))
-
-    # 段落が1つだけで長すぎる場合、句点で分割を試みる
-    if len(paragraphs) == 1 and len(paragraphs[0]) > 1000:
-        long_text = paragraphs[0]
-        # 文末の句点+スペースで分割（ただし括弧内は除く）
-        sentences = re.split(r'。\s+', long_text)
-        if len(sentences) > 1:
-            paragraphs = []
-            for i, sent in enumerate(sentences):
-                if sent.strip():
-                    # 最後以外は句点を戻す
-                    if i < len(sentences) - 1:
-                        paragraphs.append(sent.strip() + '。')
-                    else:
-                        paragraphs.append(sent.strip())
-
-    return paragraphs
+    return paragraphs if paragraphs else [full_text]
 
 
 def generate_html(case: dict, year: str) -> str:
