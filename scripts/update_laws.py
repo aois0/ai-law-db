@@ -154,6 +154,7 @@ def extract_laws_from_text(text, title=''):
         (r'徴法第?({num})条'.replace('{num}', NUM_PATTERN), '国税徴収法'),
         (r'徴収法第?({num})条'.replace('{num}', NUM_PATTERN), '国税徴収法'),
         (r'行訴法第?({num})条'.replace('{num}', NUM_PATTERN), '行政事件訴訟法'),
+        (r'民訴法第?({num})条'.replace('{num}', NUM_PATTERN), '民事訴訟法'),
         (r'所令第?({num})条'.replace('{num}', NUM_PATTERN), '所得税法施行令'),
         (r'法令第?({num})条'.replace('{num}', NUM_PATTERN), '法人税法施行令'),
         (r'消令第?({num})条'.replace('{num}', NUM_PATTERN), '消費税法施行令'),
@@ -165,6 +166,9 @@ def extract_laws_from_text(text, title=''):
         (r'評基通({num})'.replace('{num}', NUM_PATTERN), '財産評価基本通達'),
         (r'法基通({num})'.replace('{num}', NUM_PATTERN), '法人税基本通達'),
         (r'所基通({num})'.replace('{num}', NUM_PATTERN), '所得税基本通達'),
+        # 租税条約
+        (r'日[^\s]{1,10}租税条約第?({num})条'.replace('{num}', NUM_PATTERN), '租税条約'),
+        (r'租税条約第?({num})条'.replace('{num}', NUM_PATTERN), '租税条約'),
     ]
 
     for pattern, law_name in abbreviations:

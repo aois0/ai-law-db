@@ -82,8 +82,9 @@ def generate_index_html(cases: list, title: str) -> str:
     tax_stats = {}
     result_stats = {}
     for case in cases:
-        for tax in case.get('tax_types', []):
-            tax_stats[tax] = tax_stats.get(tax, 0) + 1
+        for tax in case.get('tax_type', []):
+            if not tax.startswith('（'):  # マーカーは除外
+                tax_stats[tax] = tax_stats.get(tax, 0) + 1
         r = case.get('result', '')
         if r:
             result_stats[r] = result_stats.get(r, 0) + 1
@@ -122,16 +123,18 @@ def generate_index_html(cases: list, title: str) -> str:
         date = case.get('date', '')
         result = case.get('result', '')
         result_class = f'result-{result}' if result else ''
-        tax_types = case.get('tax_types', [])
-        issues = case.get('issues', [])
-        provisions = case.get('provisions', [])
+        tax_types = case.get('tax_type', [])
+        issues = case.get('issue', [])
 
-        # 税目タグ
-        tax_html = ' '.join([f'<span class="tax-tag tax-{t}">{t}</span>' for t in tax_types])
+        # 税目タグ（マーカーは除外）
+        tax_html = ' '.join([f'<span class="tax-tag tax-{t}">{t}</span>' for t in tax_types if not t.startswith('（')])
 
-        # 争点（最大2つ）
-        issues_text = ', '.join(issues[:2])
-        if len(issues) > 2:
+        # 争点（最大2つ、マーカーは表示）
+        display_issues = [i for i in issues if not i.startswith('（')][:2]
+        if not display_issues and issues:
+            display_issues = issues[:1]  # マーカーのみの場合は表示
+        issues_text = ', '.join(display_issues)
+        if len([i for i in issues if not i.startswith('（')]) > 2:
             issues_text += '...'
 
         lines.append('<tr>')
