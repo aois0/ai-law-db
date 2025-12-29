@@ -269,6 +269,35 @@ def extract_issues(text):
                 issues.append('（上告受理申立却下）')
                 break
 
+    # パターン10: 控訴審原判決引用（より広いパターン）
+    if not issues:
+        broader_citation_patterns = [
+            r'当事者の主張は[^。]*原判決[^。]*引用',
+            r'前提事実[^。]*原判決[^。]*引用',
+            r'事実及び理由[^。]*原判決[^。]*引用',
+            r'原判決[^。]*のとおり[^。]*引用',
+        ]
+        for pattern in broader_citation_patterns:
+            if re.search(pattern, text_nospace):
+                issues.append('（原判決引用）')
+                break
+
+    # パターン11: 訴訟要件事案
+    if not issues:
+        if re.search(r'訴訟要件に関する|訴えの適法性|訴えの利益', text_nospace):
+            issues.append('（訴訟要件）')
+
+    # パターン12: 「本件は、」事案説明形式
+    if not issues:
+        case_desc_match = re.search(
+            r'本件は[、,]\s*([^。]{20,200}?)(?:として|ものとして|旨)[^。]*?(?:事案|求める)',
+            text_norm
+        )
+        if case_desc_match:
+            issue_text = re.sub(r'\s+', '', case_desc_match.group(1).strip())
+            if len(issue_text) >= 15:
+                issues.append(issue_text[:100])
+
     # 重複除去
     seen = set()
     unique_issues = []
